@@ -1,0 +1,4 @@
+torch
+transformers
+PySide6
+numpy
