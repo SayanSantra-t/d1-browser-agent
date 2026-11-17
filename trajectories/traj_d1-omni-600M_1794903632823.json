@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the downloads page for python 3 from the official python website",
+  "target_query": "downloads python 3 from the official python website",
+  "query_extraction": {
+    "query": "downloads python 3 from the official python website",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'Python Releases for Windows | Python.org'",
+  "steps": 2,
+  "avg_latency_ms": 2836.5,
+  "final_url": "https://www.python.org/downloads/windows/",
+  "final_title": "Python Releases for Windows | Python.org",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=downloads+python+3+from+the+official+python+website&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDixOfCgqAOsdkxbWiVE-GzFWGkdlw%3A1794903620949&source=hp&ei=RA78aoaaOOb15OUP3tOV4Qw&iflsig=AHSINFcAAAAAavwcVF5y7o9-u3kdIVPkVJLHHaEzgfyX&ved=2ahUKEwiGzOyFyY6YAxXmOrkGHd5pJcwQ4dUDegQIABAp&uact=5&oq=downloads+python+3+from+the+official+python+website&gs_lp=Egdnd3Mtd2l6IjNkb3dubG9hZHMgcHl0aG9uIDMgZnJvbSB0aGUgb2ZmaWNpYWwgcHl0aG9uIHdlYnNpdGUyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGPAFGJ4GGKIHGOoCGCcyBxAjGOoCGCdIjgFQc1hzcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACDagCCpgDDfEF8ncF7m-5liaSBwExoAcAsgcAuAcAwgcDMy0xyAcKgAgB&sclient=gws-wiz",
+      "title": "downloads python 3 from the official python website - Google Search",
+      "candidate_count": 22,
+      "chosen_ref": "e9",
+      "description": "[main] link: Python Releases for Windows Python.org https://www.python.org \u203a downloads \u203a windows",
+      "action_type": "click",
+      "confidence": 0.0022233177442103624,
+      "latency_ms": 2836.4975452423096
+    }
+  ]
+}

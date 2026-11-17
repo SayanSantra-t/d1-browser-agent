@@ -1,0 +1,52 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the issues page of the ggml-org llama.cpp repository on github",
+  "target_query": "issues page of the ggml-org llama.cpp",
+  "query_extraction": {
+    "query": "issues page of the ggml-org llama.cpp",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'Making sure you're not a bot!'",
+  "steps": 3,
+  "avg_latency_ms": 411.6,
+  "final_url": "https://issues.ecosyste.ms/hosts/GitHub/repositories/ggml-org%2Fllama.cpp/issues?label=bug-unconfirmed",
+  "final_title": "Making sure you're not a bot!",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=issues+page+of+the+ggml-org+llama.cpp&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDh9kaM1aAB5vNUn0wLjZnKmipp1Nw%3A1794903633161&source=hp&ei=UQ78aoKMCIGr5OUP56mXkAE&iflsig=AHSINFcAAAAAavwcYVzUBixoiPag0XVeAbtTbOpcIMCt&ved=2ahUKEwjC-NWLyY6YAxWBFbkGHefUBRIQ4dUDegQIABAp&uact=5&oq=issues+page+of+the+ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IiVpc3N1ZXMgcGFnZSBvZiB0aGUgZ2dtbC1vcmcgbGxhbWEuY3BwMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxiiBxieBhjwBRjqAhgnSIABUGlYaXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgqoAgqYAwrxBS7tf5hUOSVkkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz",
+      "title": "issues page of the ggml-org llama.cpp - Google Search",
+      "candidate_count": 28,
+      "chosen_ref": "e4",
+      "description": "[main] link: ggml-org/llama.cpp Issues on GitHub",
+      "action_type": "click",
+      "confidence": 0.48027467727661133,
+      "latency_ms": 447.13377952575684
+    },
+    {
+      "step": 3,
+      "url": "https://www.google.com/search?q=issues+page+of+the+ggml-org+llama.cpp&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDh9kaM1aAB5vNUn0wLjZnKmipp1Nw%3A1794903633161&source=hp&ei=UQ78aoKMCIGr5OUP56mXkAE&iflsig=AHSINFcAAAAAavwcYVzUBixoiPag0XVeAbtTbOpcIMCt&ved=2ahUKEwjC-NWLyY6YAxWBFbkGHefUBRIQ4dUDegQIABAp&uact=5&oq=issues+page+of+the+ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IiVpc3N1ZXMgcGFnZSBvZiB0aGUgZ2dtbC1vcmcgbGxhbWEuY3BwMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxiiBxieBhjwBRjqAhgnSIABUGlYaXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgqoAgqYAwrxBS7tf5hUOSVkkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz",
+      "title": "issues page of the ggml-org llama.cpp - Google Search",
+      "candidate_count": 28,
+      "chosen_ref": "e14",
+      "description": "[main] link: ggml-org/llama.cpp issues and pull requests Ecosyste.ms https://issues.ecosyste.ms...",
+      "action_type": "click",
+      "confidence": 0.6545277833938599,
+      "latency_ms": 375.96869468688965
+    }
+  ]
+}

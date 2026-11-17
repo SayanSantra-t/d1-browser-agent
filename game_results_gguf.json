@@ -1,0 +1,12 @@
+{
+  "brain": "gguf",
+  "seed": 1234,
+  "score": 0,
+  "alive_at_cap": false,
+  "cause": "pipe",
+  "decisions": 61,
+  "frames": 241,
+  "wall_time_s": 17.0,
+  "avg_decision_ms": 271.3,
+  "actions_tail": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+}

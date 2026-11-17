@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the wikipedia article about the adiabatic process, not the heat capacity page",
+  "target_query": "wikipedia adiabatic process",
+  "query_extraction": {
+    "query": "wikipedia adiabatic process",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'Adiabatic process - Wikipedia'",
+  "steps": 2,
+  "avg_latency_ms": 323.9,
+  "final_url": "https://en.wikipedia.org/wiki/Adiabatic_process",
+  "final_title": "Adiabatic process - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 13,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=wikipedia+adiabatic+process&go=Go&ns0=1",
+      "title": "wikipedia adiabatic process - Search results - Wikipedia",
+      "candidate_count": 38,
+      "chosen_ref": "e13",
+      "description": "[main] link: Adiabatic process",
+      "action_type": "click",
+      "confidence": 0.7086938619613647,
+      "latency_ms": 323.9469528198242
+    }
+  ]
+}

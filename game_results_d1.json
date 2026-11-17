@@ -1,0 +1,12 @@
+{
+  "brain": "d1",
+  "seed": 1234,
+  "score": 0,
+  "alive_at_cap": false,
+  "cause": "pipe",
+  "decisions": 61,
+  "frames": 241,
+  "wall_time_s": 14.1,
+  "avg_decision_ms": 224.7,
+  "actions_tail": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+}

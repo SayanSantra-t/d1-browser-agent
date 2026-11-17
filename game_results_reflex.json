@@ -1,0 +1,12 @@
+{
+  "brain": "reflex",
+  "seed": 1234,
+  "score": 4,
+  "alive_at_cap": false,
+  "cause": "pipe",
+  "decisions": 156,
+  "frames": 621,
+  "wall_time_s": 0.8,
+  "avg_decision_ms": 0.0,
+  "actions_tail": "F.........F........F.....F...F...F...F.."
+}

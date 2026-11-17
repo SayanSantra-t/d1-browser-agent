@@ -1,0 +1,74 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the wikipedia article about Albert Einsteen",
+  "target_query": "wikipedia Albert Einsteen",
+  "query_extraction": {
+    "query": "wikipedia Albert Einsteen",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'Albert Einstein College of Medicine - Wikipedia'",
+  "steps": 5,
+  "avg_latency_ms": 246.8,
+  "final_url": "https://en.wikipedia.org/wiki/Albert_Einstein_College_of_Medicine",
+  "final_title": "Albert Einstein College of Medicine - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 13,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=wikipedia+Albert+Einsteen&go=Go",
+      "title": "wikipedia Albert Einsteen - Search results - Wikipedia",
+      "candidate_count": 29,
+      "chosen_ref": "e9",
+      "description": "[main] link: wikipedia albert einstein",
+      "action_type": "click",
+      "confidence": 0.8483117818832397,
+      "latency_ms": 320.95909118652344
+    },
+    {
+      "step": 3,
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+      "title": "wikipedia albert einstein - Search results - Wikipedia",
+      "candidate_count": 35,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.3771238327026367,
+      "latency_ms": 323.042631149292
+    },
+    {
+      "step": 4,
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+      "title": "wikipedia albert einstein - Search results - Wikipedia",
+      "candidate_count": 27,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.807626485824585,
+      "latency_ms": 281.20923042297363
+    },
+    {
+      "step": 5,
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+      "title": "wikipedia albert einstein - Search results - Wikipedia",
+      "candidate_count": 17,
+      "chosen_ref": "e9",
+      "description": "[main] link: Albert Einstein College of Medicine",
+      "action_type": "click",
+      "confidence": 0.02023596502840519,
+      "latency_ms": 62.082529067993164
+    }
+  ]
+}

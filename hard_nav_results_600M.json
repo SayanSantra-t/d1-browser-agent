@@ -1,0 +1,218 @@
+{
+  "H1. Deep path: official Python 3 downloads page": {
+    "model": "d1-omni-600M",
+    "goal": "open the downloads page for python 3 from the official python website",
+    "target_query": "downloads python 3 from the official python website",
+    "query_extraction": {
+      "query": "downloads python 3 from the official python website",
+      "method": "nlp_fallback",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    "success": true,
+    "reason": "Target page reached (host+path token match): 'Python Releases for Windows | Python.org'",
+    "steps": 2,
+    "avg_latency_ms": 2836.5,
+    "final_url": "https://www.python.org/downloads/windows/",
+    "final_title": "Python Releases for Windows | Python.org",
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.google.com/",
+        "title": "Google",
+        "candidate_count": 5,
+        "chosen_ref": "e1",
+        "description": "[main] search_input: Search",
+        "action_type": "type_and_search",
+        "confidence": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "step": 2,
+        "url": "https://www.google.com/search?q=downloads+python+3+from+the+official+python+website&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDixOfCgqAOsdkxbWiVE-GzFWGkdlw%3A1794903620949&source=hp&ei=RA78aoaaOOb15OUP3tOV4Qw&iflsig=AHSINFcAAAAAavwcVF5y7o9-u3kdIVPkVJLHHaEzgfyX&ved=2ahUKEwiGzOyFyY6YAxXmOrkGHd5pJcwQ4dUDegQIABAp&uact=5&oq=downloads+python+3+from+the+official+python+website&gs_lp=Egdnd3Mtd2l6IjNkb3dubG9hZHMgcHl0aG9uIDMgZnJvbSB0aGUgb2ZmaWNpYWwgcHl0aG9uIHdlYnNpdGUyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGPAFGJ4GGKIHGOoCGCcyBxAjGOoCGCdIjgFQc1hzcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACDagCCpgDDfEF8ncF7m-5liaSBwExoAcAsgcAuAcAwgcDMy0xyAcKgAgB&sclient=gws-wiz",
+        "title": "downloads python 3 from the official python website - Google Search",
+        "candidate_count": 22,
+        "chosen_ref": "e9",
+        "description": "[main] link: Python Releases for Windows Python.org https://www.python.org \u203a downloads \u203a windows",
+        "action_type": "click",
+        "confidence": 0.0022233177442103624,
+        "latency_ms": 2836.4975452423096
+      }
+    ],
+    "trajectory_file": "C:\\Users\\sayan\\OneDrive\\Desktop\\projects\\d1-browser-agent\\trajectories\\traj_d1-omni-600M_1794903632823.json",
+    "verified": true
+  },
+  "H2. Multi-hop: llama.cpp repository ISSUES page": {
+    "model": "d1-omni-600M",
+    "goal": "open the issues page of the ggml-org llama.cpp repository on github",
+    "target_query": "issues page of the ggml-org llama.cpp",
+    "query_extraction": {
+      "query": "issues page of the ggml-org llama.cpp",
+      "method": "nlp_fallback",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    "success": true,
+    "reason": "Target page reached (host+path token match): 'Making sure you're not a bot!'",
+    "steps": 3,
+    "avg_latency_ms": 411.6,
+    "final_url": "https://issues.ecosyste.ms/hosts/GitHub/repositories/ggml-org%2Fllama.cpp/issues?label=bug-unconfirmed",
+    "final_title": "Making sure you're not a bot!",
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.google.com/",
+        "title": "Google",
+        "candidate_count": 5,
+        "chosen_ref": "e1",
+        "description": "[main] search_input: Search",
+        "action_type": "type_and_search",
+        "confidence": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "step": 2,
+        "url": "https://www.google.com/search?q=issues+page+of+the+ggml-org+llama.cpp&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDh9kaM1aAB5vNUn0wLjZnKmipp1Nw%3A1794903633161&source=hp&ei=UQ78aoKMCIGr5OUP56mXkAE&iflsig=AHSINFcAAAAAavwcYVzUBixoiPag0XVeAbtTbOpcIMCt&ved=2ahUKEwjC-NWLyY6YAxWBFbkGHefUBRIQ4dUDegQIABAp&uact=5&oq=issues+page+of+the+ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IiVpc3N1ZXMgcGFnZSBvZiB0aGUgZ2dtbC1vcmcgbGxhbWEuY3BwMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxiiBxieBhjwBRjqAhgnSIABUGlYaXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgqoAgqYAwrxBS7tf5hUOSVkkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz",
+        "title": "issues page of the ggml-org llama.cpp - Google Search",
+        "candidate_count": 28,
+        "chosen_ref": "e4",
+        "description": "[main] link: ggml-org/llama.cpp Issues on GitHub",
+        "action_type": "click",
+        "confidence": 0.48027467727661133,
+        "latency_ms": 447.13377952575684
+      },
+      {
+        "step": 3,
+        "url": "https://www.google.com/search?q=issues+page+of+the+ggml-org+llama.cpp&sca_esv=d787a1adcb000f38&sxsrf=AKL5yDh9kaM1aAB5vNUn0wLjZnKmipp1Nw%3A1794903633161&source=hp&ei=UQ78aoKMCIGr5OUP56mXkAE&iflsig=AHSINFcAAAAAavwcYVzUBixoiPag0XVeAbtTbOpcIMCt&ved=2ahUKEwjC-NWLyY6YAxWBFbkGHefUBRIQ4dUDegQIABAp&uact=5&oq=issues+page+of+the+ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IiVpc3N1ZXMgcGFnZSBvZiB0aGUgZ2dtbC1vcmcgbGxhbWEuY3BwMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxiiBxieBhjwBRjqAhgnSIABUGlYaXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgqoAgqYAwrxBS7tf5hUOSVkkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz",
+        "title": "issues page of the ggml-org llama.cpp - Google Search",
+        "candidate_count": 28,
+        "chosen_ref": "e14",
+        "description": "[main] link: ggml-org/llama.cpp issues and pull requests Ecosyste.ms https://issues.ecosyste.ms...",
+        "action_type": "click",
+        "confidence": 0.6545277833938599,
+        "latency_ms": 375.96869468688965
+      }
+    ],
+    "trajectory_file": "C:\\Users\\sayan\\OneDrive\\Desktop\\projects\\d1-browser-agent\\trajectories\\traj_d1-omni-600M_1794903647214.json",
+    "verified": false
+  },
+  "H3. Typo robustness: Albert Einsteen": {
+    "model": "d1-omni-600M",
+    "goal": "open the wikipedia article about Albert Einsteen",
+    "target_query": "wikipedia Albert Einsteen",
+    "query_extraction": {
+      "query": "wikipedia Albert Einsteen",
+      "method": "nlp_fallback",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    "success": true,
+    "reason": "Target page reached (host+path token match): 'Albert Einstein College of Medicine - Wikipedia'",
+    "steps": 5,
+    "avg_latency_ms": 246.8,
+    "final_url": "https://en.wikipedia.org/wiki/Albert_Einstein_College_of_Medicine",
+    "final_title": "Albert Einstein College of Medicine - Wikipedia",
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.wikipedia.org/",
+        "title": "Wikipedia",
+        "candidate_count": 13,
+        "chosen_ref": "e1",
+        "description": "[main] search_input: search",
+        "action_type": "type_and_search",
+        "confidence": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "step": 2,
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=wikipedia+Albert+Einsteen&go=Go",
+        "title": "wikipedia Albert Einsteen - Search results - Wikipedia",
+        "candidate_count": 29,
+        "chosen_ref": "e9",
+        "description": "[main] link: wikipedia albert einstein",
+        "action_type": "click",
+        "confidence": 0.8483117818832397,
+        "latency_ms": 320.95909118652344
+      },
+      {
+        "step": 3,
+        "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+        "title": "wikipedia albert einstein - Search results - Wikipedia",
+        "candidate_count": 35,
+        "chosen_ref": "opt_scroll",
+        "description": "action: Scroll down the page to reveal more content",
+        "action_type": "scroll_down",
+        "confidence": 0.3771238327026367,
+        "latency_ms": 323.042631149292
+      },
+      {
+        "step": 4,
+        "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+        "title": "wikipedia albert einstein - Search results - Wikipedia",
+        "candidate_count": 27,
+        "chosen_ref": "opt_scroll",
+        "description": "action: Scroll down the page to reveal more content",
+        "action_type": "scroll_down",
+        "confidence": 0.807626485824585,
+        "latency_ms": 281.20923042297363
+      },
+      {
+        "step": 5,
+        "url": "https://en.wikipedia.org/w/index.php?title=Special:Search&search=wikipedia+albert+einstein&fulltext=1&profile=default&ns0=1",
+        "title": "wikipedia albert einstein - Search results - Wikipedia",
+        "candidate_count": 17,
+        "chosen_ref": "e9",
+        "description": "[main] link: Albert Einstein College of Medicine",
+        "action_type": "click",
+        "confidence": 0.02023596502840519,
+        "latency_ms": 62.082529067993164
+      }
+    ],
+    "trajectory_file": "C:\\Users\\sayan\\OneDrive\\Desktop\\projects\\d1-browser-agent\\trajectories\\traj_d1-omni-600M_1794903670893.json",
+    "verified": true
+  },
+  "H4. Negation: adiabatic process, NOT heat capacity": {
+    "model": "d1-omni-600M",
+    "goal": "open the wikipedia article about the adiabatic process, not the heat capacity page",
+    "target_query": "wikipedia adiabatic process",
+    "query_extraction": {
+      "query": "wikipedia adiabatic process",
+      "method": "nlp_fallback",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    "success": true,
+    "reason": "Target page reached (host+path token match): 'Adiabatic process - Wikipedia'",
+    "steps": 2,
+    "avg_latency_ms": 323.9,
+    "final_url": "https://en.wikipedia.org/wiki/Adiabatic_process",
+    "final_title": "Adiabatic process - Wikipedia",
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.wikipedia.org/",
+        "title": "Wikipedia",
+        "candidate_count": 13,
+        "chosen_ref": "e1",
+        "description": "[main] search_input: search",
+        "action_type": "type_and_search",
+        "confidence": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "step": 2,
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=wikipedia+adiabatic+process&go=Go&ns0=1",
+        "title": "wikipedia adiabatic process - Search results - Wikipedia",
+        "candidate_count": 38,
+        "chosen_ref": "e13",
+        "description": "[main] link: Adiabatic process",
+        "action_type": "click",
+        "confidence": 0.7086938619613647,
+        "latency_ms": 323.9469528198242
+      }
+    ],
+    "trajectory_file": "C:\\Users\\sayan\\OneDrive\\Desktop\\projects\\d1-browser-agent\\trajectories\\traj_d1-omni-600M_1794903683549.json",
+    "verified": true
+  }
+}
