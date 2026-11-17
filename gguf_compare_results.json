@@ -1,0 +1,161 @@
+{
+  "L1. Google -> Official OBS Studio Download Page": {
+    "model": "LFM3-1.7B-BrowserAgent-GGUF",
+    "goal": "open the official obs studio download page",
+    "success": true,
+    "reason": "Goal URL/title verified at step 2",
+    "steps": 1,
+    "avg_decision_latency_ms": 768.5,
+    "total_decision_time_s": 0.8,
+    "prompt_tokens_total": 362,
+    "completion_tokens_total": 25,
+    "final_url": "https://obsproject.com/",
+    "final_title": "Open Broadcaster Software | OBS",
+    "verified": true,
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.google.com/",
+        "title": "Google",
+        "action": {
+          "kind": "navigate",
+          "url": "https://obs.studio"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"navigate\",\n \"url\": \"https://obs.studio\"\n}\n```",
+        "latency_ms": 768.5
+      }
+    ]
+  },
+  "L2. PyPI -> requests Library Page": {
+    "model": "LFM3-1.7B-BrowserAgent-GGUF",
+    "goal": "open the pypi page for the requests library",
+    "success": true,
+    "reason": "Goal URL/title verified at step 2",
+    "steps": 1,
+    "avg_decision_latency_ms": 873.4,
+    "total_decision_time_s": 0.9,
+    "prompt_tokens_total": 365,
+    "completion_tokens_total": 32,
+    "final_url": "https://pypi.org/project/requests/",
+    "final_title": "requests \u00b7 PyPI",
+    "verified": true,
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.google.com/",
+        "title": "Google",
+        "action": {
+          "kind": "navigate",
+          "url": "https://www.pypi.org/project/requests"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"navigate\",\n \"url\": \"https://www.pypi.org/project/requests\"\n}\n```",
+        "latency_ms": 873.4
+      }
+    ]
+  },
+  "L3. GitHub -> llama.cpp Repository (from Google)": {
+    "model": "LFM3-1.7B-BrowserAgent-GGUF",
+    "goal": "open the ggml-org llama.cpp repository on github",
+    "success": true,
+    "reason": "Goal URL/title verified at step 2",
+    "steps": 1,
+    "avg_decision_latency_ms": 677.6,
+    "total_decision_time_s": 0.7,
+    "prompt_tokens_total": 366,
+    "completion_tokens_total": 27,
+    "final_url": "https://github.com/ggml-org/llama.cpp",
+    "final_title": "ggml-org/llama.cpp: LLM inference in C/C++",
+    "verified": true,
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.google.com/",
+        "title": "Google",
+        "action": {
+          "kind": "navigate",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        },
+        "raw_reply": "{\"action\": \"navigate\", \"url\": \"https://github.com/ggml-org/llama.cpp\"}",
+        "latency_ms": 677.6
+      }
+    ]
+  },
+  "L4. YouTube -> Topic Video (wifi security)": {
+    "model": "LFM3-1.7B-BrowserAgent-GGUF",
+    "goal": "find the video where techchip explains wifi security and play it",
+    "success": true,
+    "reason": "Goal URL/title verified at step 4",
+    "steps": 3,
+    "avg_decision_latency_ms": 913.0,
+    "total_decision_time_s": 2.7,
+    "prompt_tokens_total": 1618,
+    "completion_tokens_total": 101,
+    "final_url": "https://www.youtube.com/watch?v=MhOPxbsjtNg",
+    "final_title": "Every Wi Fi Security Setting Explained (Which Should You Pick) - YouTube",
+    "verified": true,
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.youtube.com/",
+        "title": "YouTube",
+        "action": {
+          "kind": "type",
+          "ref": "e11",
+          "text": "wifi security"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"type\",\n \"ref\": \"e11\",\n \"text\": \"wifi security\"\n}\n```\nSearch YouTube for wifi security, then open the result.",
+        "latency_ms": 1014.5
+      },
+      {
+        "step": 2,
+        "url": "https://www.youtube.com/results?search_query=wifi+security",
+        "title": "wifi security - YouTube",
+        "action": {
+          "kind": "click",
+          "ref": "e11"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"click\",\n \"ref\": \"e11\"\n}\n```\nPlay the video I found for you.",
+        "latency_ms": 848.0
+      },
+      {
+        "step": 3,
+        "url": "https://www.youtube.com/results?search_query=wifi+security",
+        "title": "wifi security - YouTube",
+        "action": {
+          "kind": "click",
+          "ref": "e15"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"click\",\n \"ref\": \"e15\"\n}\n```\nSelect the video first, then Action opens it.",
+        "latency_ms": 876.5
+      }
+    ]
+  },
+  "L5. Wikipedia -> Adiabatic Process Article": {
+    "model": "LFM3-1.7B-BrowserAgent-GGUF",
+    "goal": "open the wikipedia article about the adiabatic process",
+    "success": true,
+    "reason": "Goal URL/title verified at step 2",
+    "steps": 1,
+    "avg_decision_latency_ms": 1030.0,
+    "total_decision_time_s": 1.0,
+    "prompt_tokens_total": 542,
+    "completion_tokens_total": 43,
+    "final_url": "https://en.wikipedia.org/wiki/Adiabatic_process",
+    "final_title": "Adiabatic process - Wikipedia",
+    "verified": true,
+    "trajectory": [
+      {
+        "step": 1,
+        "url": "https://www.wikipedia.org/",
+        "title": "Wikipedia",
+        "action": {
+          "kind": "type",
+          "ref": "e1",
+          "text": "adiabatic process"
+        },
+        "raw_reply": "```json\n{\n \"action\": \"search\",\n \"ref\": \"e1\",\n \"text\": \"adiabatic process\"\n}\n```\nSearch the page for \"adiabatic process\" with the search box.",
+        "latency_ms": 1030.0
+      }
+    ]
+  }
+}
