@@ -1,0 +1,41 @@
+{
+  "model": "d1-2B",
+  "goal": "open the ggml-org llama.cpp repository on github",
+  "target_query": "ggml-org llama.cpp",
+  "query_extraction": {
+    "query": "ggml-org llama.cpp",
+    "method": "span_read",
+    "confidence": 0.9867147043309421,
+    "latency_ms": 2261.176586151123
+  },
+  "success": true,
+  "reason": "Target page reached: 'ggml-org/llama.cpp: LLM inference in C/C++'",
+  "steps": 2,
+  "avg_latency_ms": 620.3,
+  "final_url": "https://github.com/ggml-org/llama.cpp",
+  "final_title": "ggml-org/llama.cpp: LLM inference in C/C++",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=ggml-org+llama.cpp&sca_esv=c64beba00955b78c&sxsrf=AKL5yDhOcn6mE4KdBd7TDhPZHmLGOFxWEg%3A1794899792671&source=hp&ei=UP_7auKnJ_fd1sQPvuvQ0As&iflsig=AHSINFcAAAAAavwNYJLltjPKAkDbF9t_HNyXJUSvrnDu&ved=2ahUKEwjij7Hkuo6YAxX3rpUCHb41FLoQ4dUDegQIABAp&uact=5&oq=ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IhJnZ21sLW9yZyBsbGFtYS5jcHAyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGJ0GGOgGGN0FGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGKIHGJ4GGPAFGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdIiAFQb1hvcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACDqgCCpgDDvEF7mJBTkF_mleSBwExoAcAsgcAuAcAwgcDMy0xyAcKgAgB&sclient=gws-wiz",
+      "title": "ggml-org llama.cpp - Google Search",
+      "candidate_count": 11,
+      "chosen_ref": "e4",
+      "description": "[main] link: ggml-org/llama.cpp: LLM inference in C/C++ GitHub https://github.com \u203a ggml-org \u203a ...",
+      "action_type": "click",
+      "confidence": 0.4566628600127295,
+      "latency_ms": 620.3444004058838
+    }
+  ]
+}

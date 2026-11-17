@@ -1,0 +1,74 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the wikipedia article about the adiabatic process",
+  "target_query": "wikipedia adiabatic process",
+  "query_extraction": {
+    "query": "wikipedia adiabatic process",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached: 'Stai creando Wikipedia adiabatic process - Wikipedia'",
+  "steps": 5,
+  "avg_latency_ms": 404.3,
+  "final_url": "https://it.wikipedia.org/w/index.php?title=Wikipedia_adiabatic_process&action=edit&redlink=1",
+  "final_title": "Stai creando Wikipedia adiabatic process - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 40,
+      "chosen_ref": "e13",
+      "description": "[nav] button: Read Wikipedia in your language",
+      "action_type": "click",
+      "confidence": 0.3788025379180908,
+      "latency_ms": 836.6014957427979
+    },
+    {
+      "step": 2,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 9,
+      "chosen_ref": "e5",
+      "description": "[nav] link: Italiano \u2014 Wikipedia \u2014 L'enciclopedia libera",
+      "action_type": "click",
+      "confidence": 0.04026511684060097,
+      "latency_ms": 228.1944751739502
+    },
+    {
+      "step": 3,
+      "url": "https://it.wikipedia.org/wiki/Pagina_principale",
+      "title": "Wikipedia, l'enciclopedia libera",
+      "candidate_count": 40,
+      "chosen_ref": "e2",
+      "description": "[header] link: Cerca in Wikipedia [alt-f]",
+      "action_type": "click",
+      "confidence": 0.00622216984629631,
+      "latency_ms": 280.16138076782227
+    },
+    {
+      "step": 4,
+      "url": "https://it.wikipedia.org/wiki/Pagina_principale",
+      "title": "Wikipedia, l'enciclopedia libera",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Cerca in Wikipedia",
+      "action_type": "type_and_search",
+      "confidence": 0.12172721326351166,
+      "latency_ms": 272.3345756530762
+    },
+    {
+      "step": 5,
+      "url": "https://it.wikipedia.org/w/index.php?search=wikipedia+adiabatic+process&title=Speciale:Ricerca&ns0=1",
+      "title": "Risultati della ricerca di \"wikipedia adiabatic process\" - Wikipedia",
+      "candidate_count": 25,
+      "chosen_ref": "e10",
+      "description": "[main] link: Wikipedia adiabatic process (la pagina non esiste)",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

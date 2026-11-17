@@ -1,0 +1,41 @@
+{
+  "model": "d1-2B",
+  "goal": "find out how flash attention works on wikipedia",
+  "target_query": "flash attention",
+  "query_extraction": {
+    "query": "flash attention",
+    "method": "span_read",
+    "confidence": 0.93021745681639,
+    "latency_ms": 4070.042371749878
+  },
+  "success": true,
+  "reason": "Target page reached: 'Transformer (deep learning) - Wikipedia'",
+  "steps": 2,
+  "avg_latency_ms": 290.1,
+  "final_url": "https://en.wikipedia.org/wiki/FlashAttention?wprov=srpw1_0",
+  "final_title": "Transformer (deep learning) - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 13,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: search",
+      "action_type": "type_and_search",
+      "confidence": 0.9991390480334149,
+      "latency_ms": 186.40565872192383
+    },
+    {
+      "step": 2,
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=flash+attention&go=Go&ns0=1",
+      "title": "flash attention - Search results - Wikipedia",
+      "candidate_count": 36,
+      "chosen_ref": "e14",
+      "description": "[main] link: FlashAttention",
+      "action_type": "click",
+      "confidence": 0.6872625840771814,
+      "latency_ms": 393.721342086792
+    }
+  ]
+}

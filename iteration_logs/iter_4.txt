@@ -1,0 +1,21 @@
+=== ITERATION 4: Live BrowserOS neo Test #3 — Topic-Specific Video Search ===
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'find that video where techchip talks about kali linux' | Start: https://www.youtube.com
+Model: d1-omni-600M | Goal: 'find that video where techchip talks about kali linux' | Query: 'techchip kali linux' (nlp_fallback, 0.0ms)
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=88.9% | 2013.1ms
+[Step 2] https://www.youtube.com/results?search_query=techchip+kali+linux -> e12 ([main] tab: Videos) | act=click | conf=19.9% | 546.1ms
+[Step 3] https://www.youtube.com/results?search_query=techchip+kali+linux -> e18 ([main] video_link: Watch) | act=click | conf=49.3% | 263.7ms
+[Step 4] DONE: Video page opened: 'Shortened: Introducing Qwen-Coder-Qoder, superior to Cursor Composer. - YouTube'
+  Result [d1-omni-600M]: success=True | steps=3 | avg_lat=941.0ms | reason=Video page opened: 'Shortened: Introducing Qwen-Coder-Qoder, superior to Cursor Composer. - YouTube' | url=https://www.youtube.com/watch?v=NK4IGICswzs
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'find that video where techchip talks about kali linux' | Start: https://www.youtube.com
+Model: d1-2B | Goal: 'find that video where techchip talks about kali linux' | Query: 'techchip kali linux' (span_read, 2994.3ms)
+[Step 1] https://www.youtube.com/ -> e3 ([header] button: Search) | act=click | conf=84.0% | 609.8ms
+[Step 2] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=77.9% | 422.3ms
+[Step 3] https://www.youtube.com/results?search_query=techchip+kali+linux -> e28 ([main] channel_link: Go to channel TechChip) | act=click | conf=15.1% | 445.8ms
+[Step 4] https://www.youtube.com/@techchipnet -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=43.5% | 394.2ms
+[Step 5] https://www.youtube.com/@techchipnet -> e20 ([main] video_link: READ MORE) | act=click | conf=100.0% | 0.0ms
+[Step 6] DONE: Video page opened: 'You are not safe!!! | #TechChip Official #Trailer - YouTube'
+  Result [d1-2B]: success=True | steps=5 | avg_lat=468.0ms | reason=Video page opened: 'You are not safe!!! | #TechChip Official #Trailer - YouTube' | url=https://www.youtube.com/watch?v=t-PQ6oRQ3Xg
+
+=== ITERATION 4 FINISHED SUCCESSFULLY ===

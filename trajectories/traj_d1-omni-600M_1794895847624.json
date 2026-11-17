@@ -1,0 +1,85 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the llama.cpp repository",
+  "target_query": "the llama.cpp repository",
+  "query_extraction": {
+    "query": "the llama.cpp repository",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 6,
+  "avg_latency_ms": 397.8,
+  "final_url": "https://github.com/trending",
+  "final_title": "Trending repositories on GitHub today",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e12",
+      "description": "[nav] link: Repositories",
+      "action_type": "click",
+      "confidence": 0.1699030101299286,
+      "latency_ms": 1368.4935569763184
+    },
+    {
+      "step": 2,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e3",
+      "description": "[header] link: Trending",
+      "action_type": "click",
+      "confidence": 0.4729008376598358,
+      "latency_ms": 367.0661449432373
+    },
+    {
+      "step": 3,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.18035654723644257,
+      "latency_ms": 278.18989753723145
+    },
+    {
+      "step": 4,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e3",
+      "description": "[nav] link: Trending",
+      "action_type": "click",
+      "confidence": 0.43838247656822205,
+      "latency_ms": 84.10763740539551
+    },
+    {
+      "step": 5,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.16950206458568573,
+      "latency_ms": 209.69653129577637
+    },
+    {
+      "step": 6,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.29979005455970764,
+      "latency_ms": 79.30445671081543
+    }
+  ]
+}

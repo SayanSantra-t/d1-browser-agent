@@ -1,0 +1,85 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the llama.cpp repository",
+  "target_query": "llama.cpp",
+  "query_extraction": {
+    "query": "llama.cpp",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 6,
+  "avg_latency_ms": 393.2,
+  "final_url": "https://github.com/topics",
+  "final_title": "Open Source, AI & Coding Topics on GitHub",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.7887414693832397,
+      "latency_ms": 1314.969539642334
+    },
+    {
+      "step": 2,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e3",
+      "description": "[nav] link: Trending",
+      "action_type": "click",
+      "confidence": 0.3641044497489929,
+      "latency_ms": 552.2415637969971
+    },
+    {
+      "step": 3,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.848265528678894,
+      "latency_ms": 171.5869903564453
+    },
+    {
+      "step": 4,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.14779072999954224,
+      "latency_ms": 145.54476737976074
+    },
+    {
+      "step": 5,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 37,
+      "chosen_ref": "e2",
+      "description": "[nav] link: Topics",
+      "action_type": "click",
+      "confidence": 0.061853621155023575,
+      "latency_ms": 71.92850112915039
+    },
+    {
+      "step": 6,
+      "url": "https://github.com/topics",
+      "title": "Open Source, AI & Coding Topics on GitHub",
+      "candidate_count": 40,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.8491271734237671,
+      "latency_ms": 103.13129425048828
+    }
+  ]
+}

@@ -6,10 +6,13 @@ A high-speed, zero-token forward-pass autonomous browser agent architecture powe
 
 ## 🌟 Key Features
 
-- **System-1 Decision Loop:** Sub-100ms forward-pass decision inference utilizing compact multi-modal foundation models (`d1-omni-600M`).
-- **DOM Accessibility Tree Parsing:** Surgical extraction of actionable UI elements with persistent coordinate and ref mapping.
-- **Hardware-Accelerated Inference:** Native NVIDIA CUDA integration for instant zero-shot action selection without external API round-trips.
-- **Interactive Control GUI:** PySide6 desktop control surface featuring real-time telemetry, action logs, and live browser viewport streaming.
+- **System-1 Decision Loop:** Sub-100ms forward-pass decision inference utilizing compact multi-modal foundation models (`d1-omni-600M` FP16, `d1-2B` 4-bit NF4).
+- **Deterministic Policy Pipeline:** Ordered zero-forward-pass locks (login/captcha human escalation, modal dismissal, temporal/ordinal video locks, completion-stop, sort-intent, version-pin, full-string target lock, multi-input disambiguation, results-page suppression, zero-overlap abstention, premature-stop veto) that bypass the model whenever the decision is unambiguous — proven model-independent by a stub-model check.
+- **DOM Accessibility Tree Parsing:** Surgical extraction of actionable UI elements with persistent coordinate and ref mapping, ad-slot/CTA filtering, and region tagging (`[header]`, `[main]`, `[nav]`, `[modal]`).
+- **Guarded Orchestrator:** Consecutive-scroll circuit breaker, visited-element loop guard with scroll/escalate fallback, portal & results-page candidate narrowing, token-overlap arrival verification, and layered robust clicks (normal → JS dispatch → scroll+force) for hostile overlay layouts.
+- **Safety Guardrails:** `noul` risk classification plus a deterministic destructive-keyword floor so even sub-1B models block delete/pay/credential actions, escalating to `request_human`.
+- **Two Test Suites (V1 + V2):** 16-case V1 suite plus a harder 28-case V2 decision suite, 6 orchestrator guards, 16 query-extraction prompts, 10 safety cases, and 5 live BrowserOS neo CDP tasks — all green on both models (see `task.md` for the 20-iteration fix log).
+- **Interactive Control GUI:** CustomTkinter desktop control surface with live GPU model switcher and element-probability inspector.
 - **Benchmarking Suite:** Integrated GPU latency and decision throughput benchmarking harness.
 
 ---
@@ -46,11 +49,19 @@ User Goal / Task
 
 ```
 d1-browser-agent/
-├── agent_orchestrator.py    # Autonomous decision loop and step execution
+├── agent_orchestrator.py    # Guarded decision loop, loop guards, arrival verification
+├── dom_extractor.py         # Semantic DOM extraction with ad/CTA filtering + region tags
+├── d1_engine.py             # System-1 decision engine + deterministic policy pipeline
+├── d1_browser_gui.py        # CustomTkinter desktop GUI and probability inspector
 ├── browser_adapter.py       # Browser snapshot adapter and DOM element parser
-├── d1_engine.py             # System-1 decision engine powered by PyTorch/CUDA
-├── d1_browser_gui.py        # PySide6 desktop GUI and telemetry visualizer
 ├── benchmark_gpu.py         # GPU latency and decision throughput benchmarking
+├── test_suite_v2.py         # V2 hard suite (28 decision + 6 guards + 16 query + 10 safety + 5 live)
+├── compare_600m_vs_2b.py    # V1 suite source (16 cases + 12 query + 6 safety)
+├── run_iterations.py        # V1-era iteration runner (iter_1..iter_10)
+├── run_iterations_v2.py     # V2 iteration runner (iter_11..iter_20, live CDP + crash isolation)
+├── _stub_check.py           # No-GPU sanity check of the deterministic pipeline
+├── iteration_logs/          # iter_1.txt .. iter_20.txt execution & fix logs
+├── trajectories/            # Recorded JSON action trajectories
 ├── test_perfect_flow.py     # End-to-end integration test harness
 └── launch_d1_gui.bat        # Windows quick-launcher script
 ```
@@ -80,6 +91,13 @@ python benchmark_gpu.py
 ```bash
 python d1_browser_gui.py
 ```
+
+### 5. Run the Test Suites
+```bash
+python _stub_check.py                 # no-GPU: deterministic policy pipeline + guards
+python run_iterations_v2.py 11..20    # V2 suites, V1 regression, live BrowserOS neo tasks
+```
+Live tasks require BrowserOS neo running with CDP at `http://127.0.0.1:9110`.
 
 ---
 

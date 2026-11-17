@@ -1,0 +1,41 @@
+{
+  "model": "d1-2B",
+  "goal": "open the pypi page for the requests library",
+  "target_query": "requests library",
+  "query_extraction": {
+    "query": "requests library",
+    "method": "span_read",
+    "confidence": 0.9870652936036666,
+    "latency_ms": 3496.110200881958
+  },
+  "success": true,
+  "reason": "Target page reached: 'Requests Library | ROBOT FRAMEWORK'",
+  "steps": 2,
+  "avg_latency_ms": 0.0,
+  "final_url": "https://docs.robotframework.org/docs/different_libraries/requests",
+  "final_title": "Requests Library | ROBOT FRAMEWORK",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=requests+library&sca_esv=4385127ef31e43e7&sxsrf=AKL5yDj0IZsR3Yk8Esow4dOZx__vHL-z3w%3A1794899465819&source=hp&ei=Cf77at6aMPXJ1sQP0NGl4Qs&iflsig=AHSINFcAAAAAavwMGXsVccczRrdZrAtHA0r2S2AEsgXY&ved=2ahUKEwiew8PIuY6YAxX1pJUCHdBoKbwQ4dUDegQIABAp&uact=5&oq=requests+library&gs_lp=Egdnd3Mtd2l6IhByZXF1ZXN0cyBsaWJyYXJ5MgcQIxjqAhgnMgcQIxjqAhgnMhAQIxidBhjoBhjdBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxiiBxieBhjwBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSIUBUG1YbXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgqoAgqYAwrxBUN5uVQRsDFNkgcBMaAHALIHALgHAMIHAzItMcgHB4AIAQ&sclient=gws-wiz",
+      "title": "requests library - Google Search",
+      "candidate_count": 20,
+      "chosen_ref": "e20",
+      "description": "[main] link: Requests Library Robot Framework https://docs.robotframework.org \u203a different_libra...",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

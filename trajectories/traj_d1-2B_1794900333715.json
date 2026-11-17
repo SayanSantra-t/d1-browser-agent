@@ -1,0 +1,85 @@
+{
+  "model": "d1-2B",
+  "goal": "open the wikipedia article about the adiabatic process",
+  "target_query": "the adiabatic process",
+  "query_extraction": {
+    "query": "the adiabatic process",
+    "method": "span_read",
+    "confidence": 0.9263273409506554,
+    "latency_ms": 2106.14275932312
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 6,
+  "avg_latency_ms": 394.1,
+  "final_url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+  "final_title": "Search - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 13,
+      "chosen_ref": "e12",
+      "description": "[main] button: Search",
+      "action_type": "click",
+      "confidence": 0.624274711943797,
+      "latency_ms": 420.0410842895508
+    },
+    {
+      "step": 2,
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=&go=Go",
+      "title": "Search - Wikipedia",
+      "candidate_count": 8,
+      "chosen_ref": "e8",
+      "description": "[main] button: Search",
+      "action_type": "click",
+      "confidence": 0.3909321755403618,
+      "latency_ms": 402.00185775756836
+    },
+    {
+      "step": 3,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "title": "Search - Wikipedia",
+      "candidate_count": 8,
+      "chosen_ref": "e8",
+      "description": "[main] button: Search",
+      "action_type": "click",
+      "confidence": 0.41259659638140495,
+      "latency_ms": 475.72875022888184
+    },
+    {
+      "step": 4,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "title": "Search - Wikipedia",
+      "candidate_count": 8,
+      "chosen_ref": "e3",
+      "description": "[header] link: Search Wikipedia [alt-f]",
+      "action_type": "click",
+      "confidence": 0.48289076158730565,
+      "latency_ms": 426.1362552642822
+    },
+    {
+      "step": 5,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "title": "Search - Wikipedia",
+      "candidate_count": 7,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.8585686128011734,
+      "latency_ms": 473.2177257537842
+    },
+    {
+      "step": 6,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "title": "Search - Wikipedia",
+      "candidate_count": 7,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.9375421290727246,
+      "latency_ms": 167.5734519958496
+    }
+  ]
+}

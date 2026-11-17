@@ -1,0 +1,63 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the official obs studio download page",
+  "target_query": "official obs studio download",
+  "query_extraction": {
+    "query": "official obs studio download",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'Download | OBS'",
+  "steps": 4,
+  "avg_latency_ms": 466.4,
+  "final_url": "https://obsproject.com/download",
+  "final_title": "Download | OBS",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=official+obs+studio+download&sca_esv=c64beba00955b78c&sxsrf=AKL5yDiRAcDA79Kn5jT0CwiING-pGXJn8A%3A1794900653378&source=hp&ei=rQL8aryyFd_W1sQP0oit0QU&iflsig=AHSINFcAAAAAavwQvTkjiNQHa5XlOTaciPpSdbJJM1pY&ved=2ahUKEwj8vOb-vY6YAxVfq5UCHVJEK1oQ4dUDegQIABAp&uact=5&oq=official+obs+studio+download&gs_lp=Egdnd3Mtd2l6IhxvZmZpY2lhbCBvYnMgc3R1ZGlvIGRvd25sb2FkMgcQIxjqAhgnMhAQIxidBhjoBhjdBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxjwBRieBhiiBxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSKYBUIwBWIwBcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACEKgCCpgDEPEFBwYiAO4Ey9OSBwExoAcAsgcAuAcAwgcDMy0xyAcNgAgB&sclient=gws-wiz",
+      "title": "official obs studio download - Google Search",
+      "candidate_count": 18,
+      "chosen_ref": "e6",
+      "description": "[main] link: OBS Studio Download Page",
+      "action_type": "click",
+      "confidence": 0.6538132429122925,
+      "latency_ms": 828.603982925415
+    },
+    {
+      "step": 3,
+      "url": "https://www.google.com/search?q=official+obs+studio+download&sca_esv=c64beba00955b78c&sxsrf=AKL5yDiRAcDA79Kn5jT0CwiING-pGXJn8A%3A1794900653378&source=hp&ei=rQL8aryyFd_W1sQP0oit0QU&iflsig=AHSINFcAAAAAavwQvTkjiNQHa5XlOTaciPpSdbJJM1pY&ved=2ahUKEwj8vOb-vY6YAxVfq5UCHVJEK1oQ4dUDegQIABAp&uact=5&oq=official+obs+studio+download&gs_lp=Egdnd3Mtd2l6IhxvZmZpY2lhbCBvYnMgc3R1ZGlvIGRvd25sb2FkMgcQIxjqAhgnMhAQIxidBhjoBhjdBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxjwBRieBhiiBxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSKYBUIwBWIwBcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACEKgCCpgDEPEFBwYiAO4Ey9OSBwExoAcAsgcAuAcAwgcDMy0xyAcNgAgB&sclient=gws-wiz",
+      "title": "official obs studio download - Google Search",
+      "candidate_count": 19,
+      "chosen_ref": "e6",
+      "description": "[main] link: OBS Studio Download Page. Link preview. Site: OBS Studio. Title: Download | OBS. U...",
+      "action_type": "click",
+      "confidence": 0.6999284029006958,
+      "latency_ms": 254.87542152404785
+    },
+    {
+      "step": 4,
+      "url": "https://www.google.com/search?q=official+obs+studio+download&sca_esv=c64beba00955b78c&sxsrf=AKL5yDiRAcDA79Kn5jT0CwiING-pGXJn8A%3A1794900653378&source=hp&ei=rQL8aryyFd_W1sQP0oit0QU&iflsig=AHSINFcAAAAAavwQvTkjiNQHa5XlOTaciPpSdbJJM1pY&ved=2ahUKEwj8vOb-vY6YAxVfq5UCHVJEK1oQ4dUDegQIABAp&uact=5&oq=official+obs+studio+download&gs_lp=Egdnd3Mtd2l6IhxvZmZpY2lhbCBvYnMgc3R1ZGlvIGRvd25sb2FkMgcQIxjqAhgnMhAQIxidBhjoBhjdBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMhAQIxjwBRieBhiiBxjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnSKYBUIwBWIwBcAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACEKgCCpgDEPEFBwYiAO4Ey9OSBwExoAcAsgcAuAcAwgcDMy0xyAcNgAgB&sclient=gws-wiz",
+      "title": "official obs studio download - Google Search",
+      "candidate_count": 18,
+      "chosen_ref": "e4",
+      "description": "[main] link: Download OBS Studio OBS Studio https://obsproject.com \u203a download",
+      "action_type": "click",
+      "confidence": 0.348113089799881,
+      "latency_ms": 315.5961036682129
+    }
+  ]
+}

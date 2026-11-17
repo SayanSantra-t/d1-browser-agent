@@ -1,0 +1,85 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the official obs studio download page",
+  "target_query": "official obs studio download",
+  "query_extraction": {
+    "query": "official obs studio download",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 6,
+  "avg_latency_ms": 421.8,
+  "final_url": "https://www.google.com/chrome/terms/",
+  "final_title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/?zx=1794899049517",
+      "title": "Google",
+      "candidate_count": 8,
+      "chosen_ref": "e7",
+      "description": "[modal] link: Chrome and ChromeOS Additional Terms of Service",
+      "action_type": "click",
+      "confidence": 0.7125239968299866,
+      "latency_ms": 1455.3604125976562
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/chrome/terms/",
+      "title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+      "candidate_count": 3,
+      "chosen_ref": "e2",
+      "description": "[main] link: https://policies.google.com/terms",
+      "action_type": "click",
+      "confidence": 0.5488641858100891,
+      "latency_ms": 228.92475128173828
+    },
+    {
+      "step": 3,
+      "url": "https://www.google.com/chrome/terms/",
+      "title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+      "candidate_count": 3,
+      "chosen_ref": "e3",
+      "description": "[main] link: HTTPS://WWW.VIA-LA.COM",
+      "action_type": "click",
+      "confidence": 0.02497554011642933,
+      "latency_ms": 104.04276847839355
+    },
+    {
+      "step": 4,
+      "url": "https://www.google.com/chrome/terms/",
+      "title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+      "candidate_count": 1,
+      "chosen_ref": "e1",
+      "description": "[main] link: HTTPS://WWW.VIA-LA.COM",
+      "action_type": "click",
+      "confidence": 0.9428084492683411,
+      "latency_ms": 287.72950172424316
+    },
+    {
+      "step": 5,
+      "url": "https://www.google.com/chrome/terms/",
+      "title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+      "candidate_count": 1,
+      "chosen_ref": "e1",
+      "description": "[main] link: HTTPS://WWW.VIA-LA.COM",
+      "action_type": "click",
+      "confidence": 0.9501081109046936,
+      "latency_ms": 162.66918182373047
+    },
+    {
+      "step": 6,
+      "url": "https://www.google.com/chrome/terms/",
+      "title": "Chrome/ChromeOS/GooglebookOS Additional Terms of Service",
+      "candidate_count": 1,
+      "chosen_ref": "e1",
+      "description": "[main] link: HTTPS://WWW.VIA-LA.COM",
+      "action_type": "click",
+      "confidence": 0.9558867812156677,
+      "latency_ms": 292.0100688934326
+    }
+  ]
+}

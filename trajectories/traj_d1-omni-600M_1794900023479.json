@@ -1,0 +1,96 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "find the video where techchip explains wifi security and play it",
+  "target_query": "techchip wifi security",
+  "query_extraction": {
+    "query": "techchip wifi security",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 7,
+  "avg_latency_ms": 544.1,
+  "final_url": "https://www.youtube.com/watch?v=V075iaNwFkY",
+  "final_title": "Easily remotely control your android device [Hindi] - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 35,
+      "chosen_ref": "e29",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.16501113772392273,
+      "latency_ms": 1388.267993927002
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e18",
+      "description": "[main] video_link: Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs 28 minutes",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/watch?v=6p5JGC_M8bI",
+      "title": "Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs - YouTube",
+      "candidate_count": 30,
+      "chosen_ref": "e28",
+      "description": "[main] tab: From TechChip",
+      "action_type": "click",
+      "confidence": 0.32764604687690735,
+      "latency_ms": 309.3225955963135
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/watch?v=6p5JGC_M8bI",
+      "title": "Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs - YouTube",
+      "candidate_count": 31,
+      "chosen_ref": "e17",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.15678521990776062,
+      "latency_ms": 222.7647304534912
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e20",
+      "description": "[main] video_link: Build a 24/7 Cloud Pentesing Lab using Contabo & New Kali Linux 2026.3 14 minutes,...",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 6,
+      "url": "https://www.youtube.com/watch?v=sYcQEX6uGnc",
+      "title": "Build a 24/7 Cloud Pentesing Lab using Contabo & New Kali Linux 2026.3 - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e18",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.44873782992362976,
+      "latency_ms": 255.8901309967041
+    },
+    {
+      "step": 7,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e22",
+      "description": "[main] video_link: Easily remotely control your android device [Hindi] 13 minutes, 9 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

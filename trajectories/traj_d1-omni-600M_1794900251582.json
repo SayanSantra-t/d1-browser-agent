@@ -1,0 +1,96 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "find the video where techchip explains wifi security and play it",
+  "target_query": "techchip wifi security",
+  "query_extraction": {
+    "query": "techchip wifi security",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": false,
+  "reason": "max_steps_reached",
+  "steps": 7,
+  "avg_latency_ms": 596.0,
+  "final_url": "https://www.youtube.com/watch?v=BcDLBWFphMc",
+  "final_title": "Want a Career in Web Security? Start Here. - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 37,
+      "chosen_ref": "e9",
+      "description": "[main] tab: Security hackers",
+      "action_type": "click",
+      "confidence": 0.0025914013385772705,
+      "latency_ms": 1428.8146495819092
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 35,
+      "chosen_ref": "e26",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.07732757180929184,
+      "latency_ms": 337.7490043640137
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e25",
+      "description": "[main] video_link: Easy WiFi Hacking with AI 13 minutes, 57 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/watch?v=1CPqp5Gf0OI",
+      "title": "Easy WiFi Hacking with AI - YouTube",
+      "candidate_count": 30,
+      "chosen_ref": "e19",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.2658950090408325,
+      "latency_ms": 254.133939743042
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e32",
+      "description": "[main] video_link: AirSnitch: New WiFi Hacking Attack 2026 9 minutes, 18 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 6,
+      "url": "https://www.youtube.com/watch?v=C0flY6vN2dw",
+      "title": "AirSnitch: New WiFi Hacking Attack 2026 - YouTube",
+      "candidate_count": 30,
+      "chosen_ref": "e17",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.2767943739891052,
+      "latency_ms": 363.18373680114746
+    },
+    {
+      "step": 7,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e39",
+      "description": "[main] video_link: Want a Career in Web Security? Start Here. 7 minutes, 7 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

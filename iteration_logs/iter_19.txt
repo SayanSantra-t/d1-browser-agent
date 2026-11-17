@@ -1,0 +1,47 @@
+=== ITERATION 19: Live BrowserOS neo — YouTube Topic Video + Wikipedia Article ===
+Took three live runs to reach green. Fix history:
+
+RUN 1 (crashed): 600M L4 died with a Playwright 30s click timeout (YouTube overlays —
+  mealbar promo, sticky header, search combobox — intercept pointer events), which killed
+  the whole iteration including L5.
+  FIX-D (orchestrator): _robust_click — normal click -> JS el.click() dispatch ->
+  scroll_into_view+force; never raises.
+  FIX-E (runner): per-task exception isolation — a crashed run_cdp_task records
+  verified=False and the iteration continues.
+
+RUN 2 (no crash, 0/4 verified): four distinct mechanisms:
+  - Query tail pollution: 'techchip wifi security AND PLAY IT' (talks_match kept the
+    secondary action). FIX-G2 (engine): strip trailing 'and/then + action-verb (+it)' tails.
+  - 2B stopped on a wrong video ('Agent Zero...' at 21.6% for a wifi-security goal).
+    FIX-J (engine, Policy 9b): premature-stop veto — on watch pages with a video goal,
+    opt_done is removed from the menu unless a topic token appears in the title or the
+    just-clicked element.
+  - Action verb counted as topic token ('play' matched the click history).
+    FIX-F2: video completion tokens exclude play/watch/see/open/click/stream.
+  - 'Subscribe to TechChip' clicked at 81.7% on a watch page.
+    FIX-F1 (orchestrator): watch pages suppress subscribe/notifications/bell/join/
+    sponsor/donate buttons.
+  - Full-string lock clicked a '(page does not exist)' placeholder.
+    FIX-H (engine): those candidates are dropped globally (also 'la pagina non esiste').
+  - False completion ON a search page: Wikipedia's Special:Search / index.php?search=
+    URLs didn't match the results detector. FIX-I: results detection covers special:search,
+    special%3asearch, ?search= (engine + orchestrator).
+  - 600M drifted to ITALIAN Wikipedia: 'wikipedia' token matched 'Italiano — Wikipedia —...'
+    language links, blocking search-box narrowing. FIX-L1: topic matching excludes tokens
+    already carried by the host.
+  - On empty/failed result pages the model re-clicked the 'Search' button (empty query).
+    FIX-L2 (orchestrator): results pages with no topic-matching links narrow to the input
+    (narrowed_to_search) instead.
+  - Channel-page wrong-video picks: FIX-L3 topic-aware video_link narrowing.
+  - Channel-corroborated completion too strict (2 topic tokens required even after
+    navigating via the named channel). FIX-L4: visited channel_link with any topic token
+    + >=1 topic token in title/click => done.
+
+RUN 3 (final): all four live runs verified=True.
+  L4 d1-omni-600M: verified=True | steps=3 | 'Want a Career in Web Security? Start Here.'
+  L4 d1-2B:        verified=True | steps=2 | same video via channel route
+  L5 d1-omni-600M: verified=True | steps=2 | search -> 'Adiabatic process' link
+  L5 d1-2B:        verified=True | steps=1 | Wikipedia search redirects straight to the
+                     article; arrival check caught it on the next loop.
+
+=== ITERATION 19 FINISHED SUCCESSFULLY ===

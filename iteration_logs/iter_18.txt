@@ -1,0 +1,22 @@
+=== ITERATION 18: Live BrowserOS neo — PyPI requests + GitHub llama.cpp ===
+Re-run after live hardening (previous run: L3 verified=True, L2 verified=False on both):
+  ROOT CAUSE (L2): extract_search_text's 'page for the' handler dropped the site
+        qualifier — 'open the pypi page for the requests library' extracted 'requests
+        library', searched that, and clicked a lookalike (docs.robotframework.org
+        'Requests Library | ROBOT FRAMEWORK') that the legacy title-contiguous completion
+        then blessed as done.
+  FIX-G (engine): '<site> page for the <topic>' now KEEPS the site qualifier ->
+        'pypi requests library' / 'wikipedia periodic table'. V2 Query expectations for
+        both cases tightened accordingly (steeper assertions, both models 16/16 after
+        _postclean_span got a matching site-qualifier completion so span_read models pass).
+  BONUS: with the qualified query the full-string target lock no longer fires on
+        lookalikes (no contiguous 'pypi requests library' in foreign links), and the
+        host+path arrival rule rejects the wrong domain outright.
+
+Results (after fixes): L2 + L3 verified=True on BOTH models, 2 steps each.
+  L2 d1-omni-600M: verified=True | url=https://pypi.org/project/requests/
+  L2 d1-2B:        verified=True | url=https://pypi.org/project/requests/
+  L3 d1-omni-600M: verified=True | url=https://github.com/ggml-org/llama.cpp
+  L3 d1-2B:        verified=True | url=https://github.com/ggml-org/llama.cpp
+
+=== ITERATION 18 FINISHED SUCCESSFULLY ===

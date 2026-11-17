@@ -1,0 +1,63 @@
+{
+  "model": "d1-2B",
+  "goal": "open the llama.cpp repository",
+  "target_query": "llama.cpp",
+  "query_extraction": {
+    "query": "llama.cpp",
+    "method": "span_read",
+    "confidence": 0.9827048350496147,
+    "latency_ms": 3216.3467407226562
+  },
+  "success": true,
+  "reason": "Target page reached: 'ggml-org/llama.cpp: LLM inference in C/C++'",
+  "steps": 4,
+  "avg_latency_ms": 458.8,
+  "final_url": "https://github.com/ggml-org/llama.cpp",
+  "final_title": "ggml-org/llama.cpp: LLM inference in C/C++",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e12",
+      "description": "[nav] link: Repositories",
+      "action_type": "click",
+      "confidence": 0.6023006519306489,
+      "latency_ms": 496.58966064453125
+    },
+    {
+      "step": 2,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e4",
+      "description": "[header] button: Open quick search dialog, type / to search",
+      "action_type": "click",
+      "confidence": 0.4335716924225769,
+      "latency_ms": 556.0779571533203
+    },
+    {
+      "step": 3,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[modal] search_input: Search or jump to...",
+      "action_type": "type_and_search",
+      "confidence": 0.40585469238857874,
+      "latency_ms": 494.33231353759766
+    },
+    {
+      "step": 4,
+      "url": "https://github.com/search?q=llama.cpp&type=repositories",
+      "title": "Repository search results",
+      "candidate_count": 40,
+      "chosen_ref": "e40",
+      "description": "[main] link: ggml-org/llama.cpp",
+      "action_type": "click",
+      "confidence": 0.39936321838482897,
+      "latency_ms": 288.069486618042
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+=== ITERATION 14: Query Extraction V2 Hardening (negations, quoted, 'page for the', numbered pins) ===
+
+--- Offline V2 Query Suite (16 prompts): d1-omni-600M ---
+  V2 Query Extraction: 16/16 (100%) | AvgLat=0.0ms
+
+--- Offline V2 Query Suite (16 prompts): d1-2B ---
+  V2 Query Extraction: 16/16 (100%) | AvgLat=346.1ms
+
+=== ITERATION 14 FINISHED SUCCESSFULLY ===

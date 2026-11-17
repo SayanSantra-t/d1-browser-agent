@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open techchip youtube channel",
+  "target_query": "techchip",
+  "query_extraction": {
+    "query": "techchip",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached: 'TechChip - YouTube'",
+  "steps": 2,
+  "avg_latency_ms": 466.0,
+  "final_url": "https://www.youtube.com/@techchipnet",
+  "final_title": "TechChip - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 0.8673379421234131,
+      "latency_ms": 638.6854648590088
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/results?search_query=techchip",
+      "title": "techchip - YouTube",
+      "candidate_count": 33,
+      "chosen_ref": "e15",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.4399843215942383,
+      "latency_ms": 293.2450771331787
+    }
+  ]
+}

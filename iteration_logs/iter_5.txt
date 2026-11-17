@@ -1,0 +1,19 @@
+=== ITERATION 5: Live BrowserOS neo Test #4 — Wikipedia Search & Article Open ===
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'find out how flash attention works on wikipedia' | Start: https://www.wikipedia.org
+Model: d1-omni-600M | Goal: 'find out how flash attention works on wikipedia' | Query: 'flash attention' (nlp_fallback, 0.0ms)
+[Step 1] https://www.wikipedia.org/ -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=50.4% | 1438.6ms
+[Step 2] https://www.wikipedia.org/ -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=56.9% | 67.1ms
+[Step 3] https://www.wikipedia.org/ -> e1 ([main] search_input: search) | act=type_and_search | conf=100.0% | 0.0ms
+[Step 4] https://en.wikipedia.org/wiki/Special:Search?search=flash+attention&go=Go&ns0=1 -> e14 ([main] link: FlashAttention) | act=click | conf=71.8% | 354.7ms
+[Step 5] DONE: Target page reached: 'Transformer (deep learning) - Wikipedia'
+  Result [d1-omni-600M]: success=True | steps=4 | avg_lat=620.1ms | reason=Target page reached: 'Transformer (deep learning) - Wikipedia' | url=https://en.wikipedia.org/wiki/Transformer_(deep_learning)#FlashAttention
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'find out how flash attention works on wikipedia' | Start: https://www.wikipedia.org
+Model: d1-2B | Goal: 'find out how flash attention works on wikipedia' | Query: 'flash attention' (span_read, 4070.0ms)
+[Step 1] https://www.wikipedia.org/ -> e1 ([main] search_input: search) | act=type_and_search | conf=99.9% | 186.4ms
+[Step 2] https://en.wikipedia.org/wiki/Special:Search?search=flash+attention&go=Go&ns0=1 -> e14 ([main] link: FlashAttention) | act=click | conf=68.7% | 393.7ms
+[Step 3] DONE: Target page reached: 'Transformer (deep learning) - Wikipedia'
+  Result [d1-2B]: success=True | steps=2 | avg_lat=290.1ms | reason=Target page reached: 'Transformer (deep learning) - Wikipedia' | url=https://en.wikipedia.org/wiki/FlashAttention?wprov=srpw1_0
+
+=== ITERATION 5 FINISHED SUCCESSFULLY ===

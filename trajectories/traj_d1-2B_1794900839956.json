@@ -1,0 +1,52 @@
+{
+  "model": "d1-2B",
+  "goal": "find the video where techchip explains wifi security and play it",
+  "target_query": "techchip wifi security",
+  "query_extraction": {
+    "query": "techchip wifi security",
+    "method": "span_read",
+    "confidence": 0.9164067698257643,
+    "latency_ms": 2108.268976211548
+  },
+  "success": true,
+  "reason": "Video page opened: 'Want a Career in Web Security? Start Here. - YouTube'",
+  "steps": 3,
+  "avg_latency_ms": 506.9,
+  "final_url": "https://www.youtube.com/watch?v=BcDLBWFphMc&t=2s",
+  "final_title": "Want a Career in Web Security? Start Here. - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 30,
+      "chosen_ref": "e9",
+      "description": "[main] tab: Security hackers",
+      "action_type": "click",
+      "confidence": 0.011981979618164919,
+      "latency_ms": 476.712703704834
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 34,
+      "chosen_ref": "e34",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.7510890867000334,
+      "latency_ms": 537.0774269104004
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e22",
+      "description": "[main] video_link: Want a Career in Web Security? Start Here. 7 minutes, 7 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

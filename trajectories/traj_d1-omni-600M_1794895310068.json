@@ -1,0 +1,30 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open greencode and play its latest video",
+  "target_query": "greencode",
+  "query_extraction": {
+    "query": "greencode",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Video page opened: 'Shortened: Qoder for JetBrains: Write and Run AI Prompts in Markdown \u2014 No More Cramped Chat Boxes - YouTube'",
+  "steps": 1,
+  "avg_latency_ms": 1506.4,
+  "final_url": "https://www.youtube.com/watch?v=mVe1LOu5LfQ",
+  "final_title": "Shortened: Qoder for JetBrains: Write and Run AI Prompts in Markdown \u2014 No More Cramped Chat Boxes - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e32",
+      "description": "[main] video_link: Watch",
+      "action_type": "click",
+      "confidence": 0.40219104290008545,
+      "latency_ms": 1506.3588619232178
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "model": "d1-2B",
+  "goal": "open the wikipedia article about the adiabatic process",
+  "target_query": "adiabatic process",
+  "query_extraction": {
+    "query": "adiabatic process",
+    "method": "span_read",
+    "confidence": 0.9263273409506554,
+    "latency_ms": 2053.0688762664795
+  },
+  "success": true,
+  "reason": "Target page reached: 'Adiabatic process - Wikipedia'",
+  "steps": 1,
+  "avg_latency_ms": 0.0,
+  "final_url": "https://en.wikipedia.org/wiki/Adiabatic_process",
+  "final_title": "Adiabatic process - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 13,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

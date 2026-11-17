@@ -1,0 +1,90 @@
+Loaded d1-omni-600M (FP16) in 3.64s | VRAM: 1120.0 MB
+
+========================================================================
+LIVE BROWSEROS TEST | d1-omni-600M (FP16)
+Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+========================================================================
+[Query Extraction] Regex -> 'techchip'
+
+--- Step 1 ---
+URL:   https://www.youtube.com/
+Title: YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 28.3% | Latency: 2360.9 ms
+
+--- Step 2 ---
+URL:   https://www.youtube.com/
+Title: YouTube
+Decision: e11 (button: Computers) -> Action: click | Conf: 25.8% | Latency: 158.8 ms
+
+--- Step 3 ---
+URL:   https://www.youtube.com/
+Title: YouTube
+Decision: e1 (search_input: Search) -> Action: type_and_search | Conf: 60.4% | Latency: 338.9 ms
+
+--- Step 4 ---
+URL:   https://www.youtube.com/results?search_query=techchip
+Title: techchip - YouTube
+Decision: e37 (channel_link: Go to channel TechChip) -> Action: click | Conf: 27.8% | Latency: 266.3 ms
+
+--- Step 5 ---
+URL:   https://www.youtube.com/@techchipnet
+Title: TechChip - YouTube
+[SUCCESS] Target channel/page reached in 4 actions! (TechChip - YouTube)
+
+>>> SUMMARY (d1-omni-600M (FP16)): Success=True | Steps=4 | Avg Decision Latency=781.2ms
+    Final URL:   https://www.youtube.com/@techchipnet
+    Final Title: TechChip - YouTube
+
+Loaded d1-2B (4-bit NF4) in 9.60s | VRAM: 2464.1 MB
+
+========================================================================
+LIVE BROWSEROS TEST | d1-2B (4-bit NF4)
+Goal: 'open greencode and play its latest video' | Start: https://www.youtube.com
+========================================================================
+[Query Extraction] d1-2B Span-Read -> 'greencode' (3432.0 ms)
+
+--- Step 1 ---
+URL:   https://www.youtube.com/
+Title: YouTube
+Decision: e1 (search_input: Search) -> Action: type_and_search | Conf: 81.8% | Latency: 421.3 ms
+
+--- Step 2 ---
+URL:   https://www.youtube.com/results?search_query=greencode
+Title: greencode - YouTube
+Decision: e18 (channel_link: Go to channel GreenCode) -> Action: click | Conf: 28.1% | Latency: 437.4 ms
+
+--- Step 3 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 20.9% | Latency: 402.1 ms
+
+--- Step 4 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 28.9% | Latency: 206.6 ms
+
+--- Step 5 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 32.3% | Latency: 212.0 ms
+
+--- Step 6 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 36.7% | Latency: 208.1 ms
+
+--- Step 7 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 29.9% | Latency: 204.9 ms
+
+--- Step 8 ---
+URL:   https://www.youtube.com/@itea-greencode
+Title: GreenCode - YouTube
+Decision: opt_scroll (action: Scroll down the page to reveal more content) -> Action: scroll_down | Conf: 29.9% | Latency: 206.5 ms
+
+>>> SUMMARY (d1-2B (4-bit NF4)): Success=False | Steps=8 | Avg Decision Latency=287.4ms
+    Final URL:   https://www.youtube.com/@itea-greencode
+    Final Title: GreenCode - YouTube
+
+=== LIVE BROWSEROS TEST COMPLETE ===

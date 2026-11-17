@@ -1,0 +1,74 @@
+{
+  "model": "d1-2B",
+  "goal": "find that video where techchip talks about kali linux",
+  "target_query": "techchip kali linux",
+  "query_extraction": {
+    "query": "techchip kali linux",
+    "method": "span_read",
+    "confidence": 0.846484959871504,
+    "latency_ms": 2994.272470474243
+  },
+  "success": true,
+  "reason": "Video page opened: 'You are not safe!!! | #TechChip Official #Trailer - YouTube'",
+  "steps": 5,
+  "avg_latency_ms": 468.0,
+  "final_url": "https://www.youtube.com/watch?v=t-PQ6oRQ3Xg",
+  "final_title": "You are not safe!!! | #TechChip Official #Trailer - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e3",
+      "description": "[header] button: Search",
+      "action_type": "click",
+      "confidence": 0.8400404091236394,
+      "latency_ms": 609.7879409790039
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 0.7785767151252379,
+      "latency_ms": 422.2686290740967
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/results?search_query=techchip+kali+linux",
+      "title": "techchip kali linux - YouTube",
+      "candidate_count": 37,
+      "chosen_ref": "e28",
+      "description": "[main] channel_link: Go to channel TechChip",
+      "action_type": "click",
+      "confidence": 0.15109343850653695,
+      "latency_ms": 445.7824230194092
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 3,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.434899754821839,
+      "latency_ms": 394.21820640563965
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e20",
+      "description": "[main] video_link: READ MORE",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

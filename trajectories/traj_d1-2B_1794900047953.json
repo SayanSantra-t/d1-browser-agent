@@ -1,0 +1,52 @@
+{
+  "model": "d1-2B",
+  "goal": "find the video where techchip explains wifi security and play it",
+  "target_query": "techchip wifi security",
+  "query_extraction": {
+    "query": "techchip wifi security",
+    "method": "span_read",
+    "confidence": 0.9164067698257643,
+    "latency_ms": 2879.3747425079346
+  },
+  "success": true,
+  "reason": "model_selected_stop",
+  "steps": 3,
+  "avg_latency_ms": 545.4,
+  "final_url": "https://www.youtube.com/watch?v=6p5JGC_M8bI&t=5s",
+  "final_title": "Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e31",
+      "description": "[main] channel_link: TechChip",
+      "action_type": "click",
+      "confidence": 0.46540570152985783,
+      "latency_ms": 625.9043216705322
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/@techchipnet",
+      "title": "TechChip - YouTube",
+      "candidate_count": 29,
+      "chosen_ref": "e18",
+      "description": "[main] video_link: Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs 28 minutes",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/watch?v=6p5JGC_M8bI&t=5s",
+      "title": "Agent Zero on Contabo VPS: AI Hacker That Finds Real Website Bugs - YouTube",
+      "candidate_count": 28,
+      "chosen_ref": "opt_done",
+      "description": "action: Target is already open and visible on screen, stop",
+      "action_type": "stop",
+      "confidence": 0.18434672407854982,
+      "latency_ms": 464.9536609649658
+    }
+  ]
+}

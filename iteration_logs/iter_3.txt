@@ -1,0 +1,19 @@
+=== ITERATION 3: Live BrowserOS neo Test #2 — Multi-Step Channel + Latest Video ===
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'open greencode and play its latest video' | Start: https://www.youtube.com
+Model: d1-omni-600M | Goal: 'open greencode and play its latest video' | Query: 'greencode' (nlp_fallback, 0.0ms)
+[Step 1] https://www.youtube.com/ -> e32 ([main] video_link: Watch) | act=click | conf=40.2% | 1506.4ms
+[Step 2] DONE: Video page opened: 'Shortened: Qoder for JetBrains: Write and Run AI Prompts in Markdown — No More Cramped Chat Boxes - YouTube'
+  Result [d1-omni-600M]: success=True | steps=1 | avg_lat=1506.4ms | reason=Video page opened: 'Shortened: Qoder for JetBrains: Write and Run AI Prompts in Markdown — No More Cramped Chat Boxes - YouTube' | url=https://www.youtube.com/watch?v=mVe1LOu5LfQ
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'open greencode and play its latest video' | Start: https://www.youtube.com
+Model: d1-2B | Goal: 'open greencode and play its latest video' | Query: 'greencode' (span_read, 2997.6ms)
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=87.7% | 595.0ms
+[Step 2] https://www.youtube.com/results?search_query=greencode -> e32 ([main] channel_link: GreenCode) | act=click | conf=28.9% | 480.9ms
+[Step 3] https://www.youtube.com/@GreenCode-b3t -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=72.7% | 328.8ms
+[Step 4] https://www.youtube.com/@GreenCode-b3t -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=85.5% | 155.7ms
+[Step 5] https://www.youtube.com/@GreenCode-b3t -> e13 ([main] video_link: CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 5 minutes...) | act=click | conf=100.0% | 0.0ms
+[Step 6] DONE: Video page opened: 'CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 - YouTube'
+  Result [d1-2B]: success=True | steps=5 | avg_lat=390.1ms | reason=Video page opened: 'CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 - YouTube' | url=https://www.youtube.com/watch?v=GuGwFUnsRx0
+
+=== ITERATION 3 FINISHED SUCCESSFULLY ===

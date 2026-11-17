@@ -1,0 +1,50 @@
+=== ITERATION 10: Final End-to-End Sign-Off (Offline + Live BrowserOS neo on Both Models) ===
+[Step 5] https://www.youtube.com/@corzclient/videos -> opt_done (action: Target is already open and visible on screen, stop) | act=stop | conf=27.7% | 54.0ms
+  Result [d1-omni-600M]: success=True | steps=5 | avg_lat=307.7ms | reason=model_selected_stop | url=https://www.youtube.com/@corzclient/videos
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+
+--- Offline 16-Case Decision Suite: d1-omni-600M ---
+  Decision Score: Element=8/16 (50%), Joint=8/16 (50%), AvgLat=125.1ms
+  [FAIL] 02. YT Results -> Exact Channel vs Clips Distractor: got=(e1 @ 89.8%, type_and_search) expected=(e6, click)
+  [FAIL] 03. Channel Page -> Latest Video (Multi-step Goal): got=(e3 @ 84.4%, click) expected=(e4, click)
+  [FAIL] 04. Channel Page -> Stop Immediately (Single-step Goal): got=(e2 @ 70.1%, click) expected=(opt_done, stop)
+  [FAIL] 05. GitHub Trending -> Pick Exact Repo: got=(e2 @ 64.4%, click) expected=(e3, click)
+  [FAIL] 07. Video Watch Page -> Stop Completion: got=(e3 @ 89.5%, click) expected=(opt_done, stop)
+  [FAIL] 09. Cookie Consent Modal -> Dismiss Blocker First: got=(e1 @ 77.8%, click) expected=(e2, click)
+  [FAIL] 11. Loop Avoidance -> Do Not Re-click Already Clicked Tab: got=(e2 @ 86.5%, click) expected=(e4, click)
+  [FAIL] 12. Login / Captcha Wall -> Request Human Help: got=(e4 @ 94.4%, click) expected=(opt_human, request_human)
+  Query Extraction: 12/12 (100%) | AvgLat=0.0ms
+
+--- Offline 16-Case Decision Suite: d1-2B ---
+Model: d1-2B | Goal: 'open techchip youtube channel' | Query: 'techchip' (span_read, 2200.0ms)
+  Decision Score: Element=12/16 (75%), Joint=12/16 (75%), AvgLat=308.0ms
+  [FAIL] 03. Channel Page -> Latest Video (Multi-step Goal): got=(e3 @ 53.4%, click) expected=(e4, click)
+  [FAIL] 05. GitHub Trending -> Pick Exact Repo: got=(opt_scroll @ 50.7%, scroll_down) expected=(e3, click)
+  [FAIL] 09. Cookie Consent Modal -> Dismiss Blocker First: got=(e5 @ 68.9%, click) expected=(e2, click)
+  [FAIL] 12. Login / Captcha Wall -> Request Human Help: got=(e4 @ 37.4%, click) expected=(opt_human, request_human)
+  Query Extraction: 10/12 (83%) | AvgLat=123.7ms
+  [Q-FAIL] 'can you please look up RTX 3050 4GB llama.cpp flags on reddit' -> got='RTX 3050 4GB llama.cpp' (span_read) vs exp='RTX 3050 4GB llama.cpp flags'
+  [Q-FAIL] 'go to github and find llama.cpp releases' -> got='llama.cpp' (span_read) vs exp='llama.cpp releases'
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=99.9% | 248.2ms
+Model: d1-omni-600M | Goal: 'open techchip youtube channel' | Query: 'techchip' (nlp_fallback, 0.0ms)
+[Step 2] https://www.youtube.com/results?search_query=techchip -> e15 ([main] channel_link: TechChip) | act=click | conf=42.3% | 426.6ms
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=86.7% | 638.7ms
+[Step 3] DONE: Target page reached: 'TechChip - YouTube'
+  Result [d1-2B]: success=True | steps=2 | avg_lat=337.4ms | reason=Target page reached: 'TechChip - YouTube' | url=https://www.youtube.com/@techchipnet
+
+=== ITERATION 10 FINISHED SUCCESSFULLY ===
+[Step 2] https://www.youtube.com/results?search_query=techchip -> e15 ([main] channel_link: TechChip) | act=click | conf=44.0% | 293.2ms
+[Step 3] DONE: Target page reached: 'TechChip - YouTube'
+  Result [d1-omni-600M]: success=True | steps=2 | avg_lat=466.0ms | reason=Target page reached: 'TechChip - YouTube' | url=https://www.youtube.com/@techchipnet
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+Model: d1-2B | Goal: 'open techchip youtube channel' | Query: 'techchip' (span_read, 1995.3ms)
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=99.9% | 290.6ms
+[Step 2] https://www.youtube.com/results?search_query=techchip -> e15 ([main] channel_link: TechChip) | act=click | conf=29.2% | 484.9ms
+[Step 3] DONE: Target page reached: 'TechChip - YouTube'
+  Result [d1-2B]: success=True | steps=2 | avg_lat=387.8ms | reason=Target page reached: 'TechChip - YouTube' | url=https://www.youtube.com/@techchipnet
+
+=== ITERATION 10 FINISHED SUCCESSFULLY ===

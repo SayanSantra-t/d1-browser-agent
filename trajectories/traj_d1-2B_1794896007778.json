@@ -1,0 +1,52 @@
+{
+  "model": "d1-2B",
+  "goal": "open the llama.cpp repository",
+  "target_query": "llama.cpp",
+  "query_extraction": {
+    "query": "llama.cpp",
+    "method": "span_read",
+    "confidence": 0.9827048350496147,
+    "latency_ms": 3089.813232421875
+  },
+  "success": true,
+  "reason": "Target page reached: 'ggml-org/llama.cpp: LLM inference in C/C++'",
+  "steps": 3,
+  "avg_latency_ms": 415.8,
+  "final_url": "https://github.com/ggml-org/llama.cpp",
+  "final_title": "ggml-org/llama.cpp: LLM inference in C/C++",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e4",
+      "description": "[header] button: Open quick search dialog, type / to search",
+      "action_type": "click",
+      "confidence": 0.9155494731325662,
+      "latency_ms": 478.8839817047119
+    },
+    {
+      "step": 2,
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "candidate_count": 40,
+      "chosen_ref": "e2",
+      "description": "[modal] link: llama.cpp Recent search: llama.cpp",
+      "action_type": "click",
+      "confidence": 0.3488633833325214,
+      "latency_ms": 497.7385997772217
+    },
+    {
+      "step": 3,
+      "url": "https://github.com/search?q=llama.cpp&type=repositories",
+      "title": "Repository search results",
+      "candidate_count": 40,
+      "chosen_ref": "e40",
+      "description": "[main] link: ggml-org/llama.cpp",
+      "action_type": "click",
+      "confidence": 0.4304620833407452,
+      "latency_ms": 270.75672149658203
+    }
+  ]
+}

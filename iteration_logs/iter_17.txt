@@ -1,0 +1,24 @@
+=== ITERATION 17: Live BrowserOS neo — Google -> Official OBS Studio Download ===
+Re-run after live hardening (previous run: both models verified=False):
+  FIX-A (orchestrator): token-overlap arrival check in check_goal_reached — query tokens
+        (>=3 chars, minus generic words) must match BOTH the URL host and the path; closes
+        the gap where 'officialobsstudiodownload' never matched obsproject.com/download and
+        the agent kept scrolling on the target page until max_steps.
+  FIX-B1 (engine): informational-only modal overlays (terms/privacy links, no buttons) are
+        dropped from the candidate pool — clicking 'Chrome and ChromeOS Additional Terms of
+        Service' inside Google's modal derailed 600M into a terms-page loop.
+  FIX-B2 (orchestrator): is_portal_home regex now tolerates query strings (google.com/?zx=...)
+        so the modal-bearing homepage still narrows to the search box.
+  FIX-C (orchestrator): visited-fallback loop guard — when every non-input candidate on a
+        URL is already clicked, scroll for fresh content (circuit-breaker aware) instead of
+        re-offering visited items; escalate to human if scrolls are exhausted.
+
+Results (after fixes): L1 verified=True on BOTH models.
+  d1-omni-600M: success=True verified=True | steps=4 | url=https://obsproject.com/download
+  d1-2B:        success=True verified=True | steps=4 | url=https://obsproject.com/download
+  Note: minor inefficiency remains — the results link e6 is clicked twice (Google's
+  'Link preview' panel changes the label, so the visited filter key role:label misses);
+  costs one step but does not break the task. Left as-is deliberately (ref-keyed visited
+  filtering risks over-filtering on dynamic pages).
+
+=== ITERATION 17 FINISHED SUCCESSFULLY ===

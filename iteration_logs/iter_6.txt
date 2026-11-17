@@ -1,0 +1,21 @@
+=== ITERATION 6: Live BrowserOS neo Test #5 — GitHub Repository Navigation ===
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'open the llama.cpp repository' | Start: https://github.com/trending
+Model: d1-omni-600M | Goal: 'open the llama.cpp repository' | Query: 'llama.cpp' (nlp_fallback, 0.0ms)
+[Step 1] https://github.com/trending -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=78.9% | 1315.0ms
+[Step 2] https://github.com/trending -> e3 ([nav] link: Trending) | act=click | conf=36.4% | 552.2ms
+[Step 3] https://github.com/trending -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=84.8% | 171.6ms
+[Step 4] https://github.com/trending -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=14.8% | 145.5ms
+[Step 5] https://github.com/trending -> e2 ([nav] link: Topics) | act=click | conf=6.2% | 71.9ms
+[Step 6] https://github.com/topics -> opt_scroll (action: Scroll down the page to reveal more content) | act=scroll_down | conf=84.9% | 103.1ms
+  Result [d1-omni-600M]: success=False | steps=6 | avg_lat=393.2ms | reason=max_steps_reached | url=https://github.com/topics
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'open the llama.cpp repository' | Start: https://github.com/trending
+Model: d1-2B | Goal: 'open the llama.cpp repository' | Query: 'llama.cpp' (span_read, 3089.8ms)
+[Step 1] https://github.com/trending -> e4 ([header] button: Open quick search dialog, type / to search) | act=click | conf=91.6% | 478.9ms
+[Step 2] https://github.com/trending -> e2 ([modal] link: llama.cpp Recent search: llama.cpp) | act=click | conf=34.9% | 497.7ms
+[Step 3] https://github.com/search?q=llama.cpp&type=repositories -> e40 ([main] link: ggml-org/llama.cpp) | act=click | conf=43.0% | 270.8ms
+[Step 4] DONE: Target page reached: 'ggml-org/llama.cpp: LLM inference in C/C++'
+  Result [d1-2B]: success=True | steps=3 | avg_lat=415.8ms | reason=Target page reached: 'ggml-org/llama.cpp: LLM inference in C/C++' | url=https://github.com/ggml-org/llama.cpp
+
+=== ITERATION 6 FINISHED SUCCESSFULLY ===

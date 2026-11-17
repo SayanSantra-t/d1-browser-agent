@@ -1,0 +1,7 @@
+=== ITERATION 7: Edge Cases — Obstruction, Loop Avoidance & Calibrated Abstention ===
+  [d1-omni-600M] Scroll Circuit Breaker -> ref=e2 ([main] tab: Videos) escalated=scroll_circuit_breaker_videos_tab
+  [d1-omni-600M] Abstention Test -> chosen=e1 (conf=86.7%, act=click)
+  [d1-2B] Scroll Circuit Breaker -> ref=e2 ([main] tab: Videos) escalated=scroll_circuit_breaker_videos_tab
+  [d1-2B] Abstention Test -> chosen=idk (conf=85.5%, act=abstain)
+
+=== ITERATION 7 FINISHED SUCCESSFULLY ===

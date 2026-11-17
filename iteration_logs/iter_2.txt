@@ -1,0 +1,17 @@
+=== ITERATION 2: Live BrowserOS neo Test #1 — YouTube Channel Open ===
+
+>>> LIVE CDP TEST [d1-omni-600M] | Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+Model: d1-omni-600M | Goal: 'open techchip youtube channel' | Query: 'techchip' (nlp_fallback, 0.0ms)
+[Step 1] https://www.youtube.com/ -> e24 ([main] tab: Computer Hardware) | act=click | conf=40.9% | 1692.0ms
+[Step 2] https://www.youtube.com/ -> e39 ([main] channel_link: TAXIM LIVE) | act=click | conf=22.3% | 323.8ms
+[Step 3] DONE: Target page reached: 'TAXIM LIVE - YouTube'
+  Result [d1-omni-600M]: success=True | steps=2 | avg_lat=1007.9ms | reason=Target page reached: 'TAXIM LIVE - YouTube' | url=https://www.youtube.com/@taximlive
+
+>>> LIVE CDP TEST [d1-2B] | Goal: 'open techchip youtube channel' | Start: https://www.youtube.com
+Model: d1-2B | Goal: 'open techchip youtube channel' | Query: 'techchip' (span_read, 2710.1ms)
+[Step 1] https://www.youtube.com/ -> e1 ([header] search_input: Search) | act=type_and_search | conf=72.8% | 534.1ms
+[Step 2] https://www.youtube.com/results?search_query=techchip -> e20 ([main] channel_link: TechChip @techchipnet•451K subscribers Welcome to the official TechChip YouTube ch...) | act=click | conf=49.9% | 562.2ms
+[Step 3] DONE: Target page reached: 'TechChip - YouTube'
+  Result [d1-2B]: success=True | steps=2 | avg_lat=548.1ms | reason=Target page reached: 'TechChip - YouTube' | url=https://www.youtube.com/@techchipnet
+
+=== ITERATION 2 FINISHED SUCCESSFULLY ===

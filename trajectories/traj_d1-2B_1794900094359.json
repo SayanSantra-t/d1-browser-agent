@@ -1,0 +1,52 @@
+{
+  "model": "d1-2B",
+  "goal": "open the wikipedia article about the adiabatic process",
+  "target_query": "the adiabatic process",
+  "query_extraction": {
+    "query": "the adiabatic process",
+    "method": "span_read",
+    "confidence": 0.9263273409506554,
+    "latency_ms": 2164.38364982605
+  },
+  "success": true,
+  "reason": "Target page reached: 'the adiabatic process - Search results - Wikipedia'",
+  "steps": 3,
+  "avg_latency_ms": 434.7,
+  "final_url": "https://en.wikipedia.org/w/index.php?search=the+adiabatic+process&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+  "final_title": "the adiabatic process - Search results - Wikipedia",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.wikipedia.org/",
+      "title": "Wikipedia",
+      "candidate_count": 40,
+      "chosen_ref": "e12",
+      "description": "[main] button: Search",
+      "action_type": "click",
+      "confidence": 0.5619074221278911,
+      "latency_ms": 605.0503253936768
+    },
+    {
+      "step": 2,
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=&go=Go",
+      "title": "Search - Wikipedia",
+      "candidate_count": 8,
+      "chosen_ref": "e8",
+      "description": "[main] button: Search",
+      "action_type": "click",
+      "confidence": 0.3909321755403618,
+      "latency_ms": 321.3694095611572
+    },
+    {
+      "step": 3,
+      "url": "https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+      "title": "Search - Wikipedia",
+      "candidate_count": 8,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search Wikipedia",
+      "action_type": "type_and_search",
+      "confidence": 0.9442177747716298,
+      "latency_ms": 377.7456283569336
+    }
+  ]
+}

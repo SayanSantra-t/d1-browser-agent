@@ -1,0 +1,30 @@
+=== ITERATION 16: Stress & Latency Regression (dense candidates + batch throughput) ===
+Re-run after 3 V1 regression fixes (previous run: 600M 13/16, 2B 14/16):
+  FIX-1 (V1-07, both models): completion-stop policy moved BEFORE target locks in
+        d1_engine.select_element_action; new Policy 5 sort-intent lock. "watch till
+        the end of X" on a watch page now returns opt_done/stop even when a target
+        element locks in first.
+  FIX-2 (V1-09, both models): _OPTOUT_CONTEXT_RE pluralization ("cookies?") so the
+        opt-out context also matches "cookie"/"cookies" banners; engine now picks the
+        decline link e2 instead of accept.
+  FIX-3 (V1-11, 600M): sort-intent regex (popular/trending/most viewed/top rated) in
+        both engine Policy 5 and agent_orchestrator (bypasses video-links-first filter);
+        "open the popular videos" now clicks the Popular button e4 instead of re-clicking
+        the visited tab e2.
+
+--- Offline V2 Hard Suite (28 cases): d1-omni-600M ---
+  V2 Decision Score: Element=28/28 (100%), Joint=28/28 (100%), AvgLat=66.8ms
+
+--- V1 Regression (16 cases): d1-omni-600M ---
+  V1 Decision Joint=16/16 (100%) | Query=12/12 | Safety=6/6
+
+--- Offline V2 Hard Suite (28 cases): d1-2B ---
+  V2 Decision Score: Element=28/28 (100%), Joint=28/28 (100%), AvgLat=176.9ms
+
+--- V1 Regression (16 cases): d1-2B ---
+  V1 Decision Joint=16/16 (100%) | Query=11/12 | Safety=6/6
+
+=== ITERATION 16 FINISHED SUCCESSFULLY ===
+RESULT: V1 regression fully green on both models (Joint 16/16 each). V1-07/V1-09/V1-11
+resolved with zero new regressions: V2 28/28 both models, Query 12/12 (600M) & 11/12 (2B,
+pre-existing gap), Safety 6/6 both. V1+V2 combined decision scores now 44/44 both models.

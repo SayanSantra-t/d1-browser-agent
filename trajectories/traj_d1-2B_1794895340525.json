@@ -1,0 +1,74 @@
+{
+  "model": "d1-2B",
+  "goal": "open greencode and play its latest video",
+  "target_query": "greencode",
+  "query_extraction": {
+    "query": "greencode",
+    "method": "span_read",
+    "confidence": 0.8863297835914516,
+    "latency_ms": 2997.593402862549
+  },
+  "success": true,
+  "reason": "Video page opened: 'CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 - YouTube'",
+  "steps": 5,
+  "avg_latency_ms": 390.1,
+  "final_url": "https://www.youtube.com/watch?v=GuGwFUnsRx0",
+  "final_title": "CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 0.8772153475956814,
+      "latency_ms": 595.0150489807129
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e32",
+      "description": "[main] channel_link: GreenCode",
+      "action_type": "click",
+      "confidence": 0.28892555879742327,
+      "latency_ms": 480.91697692871094
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/@GreenCode-b3t",
+      "title": "GreenCode - YouTube",
+      "candidate_count": 16,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.7273825317048793,
+      "latency_ms": 328.8435935974121
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/@GreenCode-b3t",
+      "title": "GreenCode - YouTube",
+      "candidate_count": 14,
+      "chosen_ref": "opt_scroll",
+      "description": "action: Scroll down the page to reveal more content",
+      "action_type": "scroll_down",
+      "confidence": 0.8551819046258005,
+      "latency_ms": 155.69329261779785
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/@GreenCode-b3t",
+      "title": "GreenCode - YouTube",
+      "candidate_count": 14,
+      "chosen_ref": "e13",
+      "description": "[main] video_link: CareSpeak | Assistive Communication Using Hand & Eye Gestures | SIH 2026 5 minutes...",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}

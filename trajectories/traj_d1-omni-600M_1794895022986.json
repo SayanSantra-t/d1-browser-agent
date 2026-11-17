@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open techchip youtube channel",
+  "target_query": "techchip",
+  "query_extraction": {
+    "query": "techchip",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached: 'TAXIM LIVE - YouTube'",
+  "steps": 2,
+  "avg_latency_ms": 1007.9,
+  "final_url": "https://www.youtube.com/@taximlive",
+  "final_title": "TAXIM LIVE - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e24",
+      "description": "[main] tab: Computer Hardware",
+      "action_type": "click",
+      "confidence": 0.40854811668395996,
+      "latency_ms": 1692.0099258422852
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e39",
+      "description": "[main] channel_link: TAXIM LIVE",
+      "action_type": "click",
+      "confidence": 0.22300054132938385,
+      "latency_ms": 323.8370418548584
+    }
+  ]
+}

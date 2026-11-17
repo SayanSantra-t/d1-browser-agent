@@ -1,0 +1,74 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open techchip youtube channel",
+  "target_query": "techchip",
+  "query_extraction": {
+    "query": "techchip",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "model_selected_stop",
+  "steps": 5,
+  "avg_latency_ms": 307.7,
+  "final_url": "https://www.youtube.com/@corzclient/videos",
+  "final_title": "Corz Client - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 0.8673379421234131,
+      "latency_ms": 775.0680446624756
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/results?search_query=techchip",
+      "title": "techchip - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e40",
+      "description": "[main] channel_link: Corz Client",
+      "action_type": "click",
+      "confidence": 0.19392631947994232,
+      "latency_ms": 269.167423248291
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/@corzclient",
+      "title": "Corz Client - YouTube",
+      "candidate_count": 21,
+      "chosen_ref": "e12",
+      "description": "[main] tab: Videos",
+      "action_type": "click",
+      "confidence": 0.17641930282115936,
+      "latency_ms": 233.03604125976562
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/@corzclient/videos",
+      "title": "Corz Client - YouTube",
+      "candidate_count": 19,
+      "chosen_ref": "e12",
+      "description": "[main] tab: Videos",
+      "action_type": "click",
+      "confidence": 0.910438597202301,
+      "latency_ms": 207.32402801513672
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/@corzclient/videos",
+      "title": "Corz Client - YouTube",
+      "candidate_count": 19,
+      "chosen_ref": "opt_done",
+      "description": "action: Target is already open and visible on screen, stop",
+      "action_type": "stop",
+      "confidence": 0.27688151597976685,
+      "latency_ms": 54.0471076965332
+    }
+  ]
+}

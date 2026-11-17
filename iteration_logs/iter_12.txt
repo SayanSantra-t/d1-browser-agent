@@ -1,0 +1,11 @@
+=== ITERATION 12: Deterministic Target-Lock, Results-Input Suppression, Channel Pruning, Completion Hint ===
+
+--- Offline V2 Hard Suite (28 cases): d1-omni-600M ---
+  V2 Decision Score: Element=26/28 (93%), Joint=26/28 (93%), AvgLat=74.4ms
+  [FAIL] V2-04. Wikipedia Disambiguation -> Deep Learning Sense: got=(e2 @ 50.7%, click) expected=(e1, click)
+  [FAIL] V2-12. Google Results -> Official Site (OBS Studio): got=(e1 @ 94.2%, type_and_search) expected=(e2, click)
+
+--- Offline V2 Hard Suite (28 cases): d1-2B ---
+  V2 Decision Score: Element=28/28 (100%), Joint=28/28 (100%), AvgLat=160.4ms
+
+=== ITERATION 12 FINISHED SUCCESSFULLY ===

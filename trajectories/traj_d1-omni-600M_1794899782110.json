@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the ggml-org llama.cpp repository on github",
+  "target_query": "ggml-org llama.cpp",
+  "query_extraction": {
+    "query": "ggml-org llama.cpp",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached: 'ggml-org/llama.cpp at codersera.com'",
+  "steps": 2,
+  "avg_latency_ms": 849.4,
+  "final_url": "https://github.com/ggml-org/llama.cpp?ref=codersera.com",
+  "final_title": "ggml-org/llama.cpp at codersera.com",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=ggml-org+llama.cpp&sca_esv=c64beba00955b78c&sxsrf=AKL5yDh3Bsm1Nz_VYNoFNq7skbALX83c5g%3A1794899771069&source=hp&ei=Ov_7asOpL-LR1sQP0fSZwQ8&iflsig=AHSINFcAAAAAavwNS3_MMgry_7mnIp9xfJ01Lltong5P&ved=2ahUKEwjDrvrZuo6YAxXiqJUCHVF6JvgQ4dUDegQIABAp&uact=5&oq=ggml-org+llama.cpp&gs_lp=Egdnd3Mtd2l6IhJnZ21sLW9yZyBsbGFtYS5jcHAyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGJ0GGOgGGN0FGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGPAFGJ4GGKIHGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdIiQFQbFhscAF4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACCqgCCpgDCvEF7B8jzVWJSFuSBwExoAcAsgcAuAcAwgcDMi0xyAcHgAgB&sclient=gws-wiz",
+      "title": "ggml-org llama.cpp - Google Search",
+      "candidate_count": 11,
+      "chosen_ref": "e8",
+      "description": "[main] link: Ggml-org/llama.cpp",
+      "action_type": "click",
+      "confidence": 0.5841285586357117,
+      "latency_ms": 849.3537902832031
+    }
+  ]
+}

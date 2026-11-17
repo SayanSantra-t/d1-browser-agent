@@ -1,0 +1,29 @@
+=== ITERATION 1: Offline 16-Case Decision + 12-Prompt Query Regression (Both Models) ===
+
+--- Offline 16-Case Decision Suite: d1-omni-600M ---
+  Decision Score: Element=8/16 (50%), Joint=8/16 (50%), AvgLat=173.1ms
+  [FAIL] 02. YT Results -> Exact Channel vs Clips Distractor: got=(e1 @ 90.8%, type_and_search) expected=(e6, click)
+  [FAIL] 03. Channel Page -> Latest Video (Multi-step Goal): got=(e3 @ 84.4%, click) expected=(e4, click)
+  [FAIL] 04. Channel Page -> Stop Immediately (Single-step Goal): got=(e2 @ 73.4%, click) expected=(opt_done, stop)
+  [FAIL] 05. GitHub Trending -> Pick Exact Repo: got=(e1 @ 38.5%, type_and_search) expected=(e3, click)
+  [FAIL] 07. Video Watch Page -> Stop Completion: got=(e3 @ 89.5%, click) expected=(opt_done, stop)
+  [FAIL] 09. Cookie Consent Modal -> Dismiss Blocker First: got=(e1 @ 89.0%, click) expected=(e2, click)
+  [FAIL] 11. Loop Avoidance -> Do Not Re-click Already Clicked Tab: got=(e2 @ 81.6%, click) expected=(e4, click)
+  [FAIL] 12. Login / Captcha Wall -> Request Human Help: got=(e4 @ 89.2%, click) expected=(opt_human, request_human)
+  Query Extraction: 11/12 (92%) | AvgLat=0.0ms
+  [Q-FAIL] 'search wikipedia for slow scan television sstv' -> got='wikipedia for slow scan television sstv' (nlp_fallback) vs exp='slow scan television sstv'
+
+--- Offline 16-Case Decision Suite: d1-2B ---
+  Decision Score: Element=11/16 (69%), Joint=11/16 (69%), AvgLat=323.9ms
+  [FAIL] 03. Channel Page -> Latest Video (Multi-step Goal): got=(e3 @ 53.4%, click) expected=(e4, click)
+  [FAIL] 05. GitHub Trending -> Pick Exact Repo: got=(e1 @ 77.3%, type_and_search) expected=(e3, click)
+  [FAIL] 06. Wikipedia Home -> Search Box over Language Links: got=(e4 @ 61.8%, click) expected=(e3, type_and_search)
+  [FAIL] 09. Cookie Consent Modal -> Dismiss Blocker First: got=(e5 @ 42.4%, click) expected=(e2, click)
+  [FAIL] 12. Login / Captcha Wall -> Request Human Help: got=(e3 @ 48.0%, type_and_search) expected=(opt_human, request_human)
+  Query Extraction: 8/12 (67%) | AvgLat=109.9ms
+  [Q-FAIL] 'find that video where techchip talks about kali linux' -> got='techchip talks about kali linux' (span_read) vs exp='techchip kali linux'
+  [Q-FAIL] 'can you please look up RTX 3050 4GB llama.cpp flags on reddit' -> got='RTX 3050 4GB llama.cpp' (span_read) vs exp='RTX 3050 4GB llama.cpp flags'
+  [Q-FAIL] 'watch the newest Fireship video on youtube' -> got='newest Fireship video' (span_read) vs exp='Fireship'
+  [Q-FAIL] 'go to github and find llama.cpp releases' -> got='llama.cpp' (span_read) vs exp='llama.cpp releases'
+
+=== ITERATION 1 FINISHED SUCCESSFULLY ===

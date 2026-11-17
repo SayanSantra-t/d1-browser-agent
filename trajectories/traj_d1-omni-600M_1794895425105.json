@@ -1,0 +1,52 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "find that video where techchip talks about kali linux",
+  "target_query": "techchip kali linux",
+  "query_extraction": {
+    "query": "techchip kali linux",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Video page opened: 'Shortened: Introducing Qwen-Coder-Qoder, superior to Cursor Composer. - YouTube'",
+  "steps": 3,
+  "avg_latency_ms": 941.0,
+  "final_url": "https://www.youtube.com/watch?v=NK4IGICswzs",
+  "final_title": "Shortened: Introducing Qwen-Coder-Qoder, superior to Cursor Composer. - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 0.889388382434845,
+      "latency_ms": 2013.1101608276367
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/results?search_query=techchip+kali+linux",
+      "title": "techchip kali linux - YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e12",
+      "description": "[main] tab: Videos",
+      "action_type": "click",
+      "confidence": 0.19854965806007385,
+      "latency_ms": 546.0565090179443
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/results?search_query=techchip+kali+linux",
+      "title": "techchip kali linux - YouTube",
+      "candidate_count": 35,
+      "chosen_ref": "e18",
+      "description": "[main] video_link: Watch",
+      "action_type": "click",
+      "confidence": 0.4928070604801178,
+      "latency_ms": 263.69214057922363
+    }
+  ]
+}

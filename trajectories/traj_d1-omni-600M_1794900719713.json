@@ -1,0 +1,41 @@
+{
+  "model": "d1-omni-600M",
+  "goal": "open the pypi page for the requests library",
+  "target_query": "pypi requests library",
+  "query_extraction": {
+    "query": "pypi requests library",
+    "method": "nlp_fallback",
+    "confidence": 1.0,
+    "latency_ms": 0.0
+  },
+  "success": true,
+  "reason": "Target page reached (host+path token match): 'requests \u00b7 PyPI'",
+  "steps": 2,
+  "avg_latency_ms": 988.0,
+  "final_url": "https://pypi.org/project/requests/",
+  "final_title": "requests \u00b7 PyPI",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.google.com/",
+      "title": "Google",
+      "candidate_count": 5,
+      "chosen_ref": "e1",
+      "description": "[main] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.google.com/search?q=pypi+requests+library&sca_esv=c64beba00955b78c&sxsrf=AKL5yDiswd7WcpceDprWG1gJ5vu2-X2iGg%3A1794900708016&source=hp&ei=4wL8aqyGPIC01sQPh82D8AE&iflsig=AHSINFcAAAAAavwQ9L8QdSqKfrltxGe5yEnvvuwWv_j8&ved=2ahUKEwjsg-2Yvo6YAxUAmpUCHYfmAB4Q4dUDegQIABAp&uact=5&oq=pypi+requests+library&gs_lp=Egdnd3Mtd2l6IhVweXBpIHJlcXVlc3RzIGxpYnJhcnkyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGJ0GGOgGGN0FGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyEBAjGKIHGJ4GGPAFGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdIywFQsAFYsAFwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIBoAITqAIKmAMT8QU03PDmThWKjJIHATGgBwCyBwC4BwDCBwMzLTHIBw6ACAE&sclient=gws-wiz",
+      "title": "pypi requests library - Google Search",
+      "candidate_count": 16,
+      "chosen_ref": "e4",
+      "description": "[main] link: Requests PyPI https://pypi.org \u203a project \u203a requests",
+      "action_type": "click",
+      "confidence": 0.7820611596107483,
+      "latency_ms": 988.0027770996094
+    }
+  ]
+}
