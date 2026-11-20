@@ -49,21 +49,30 @@ User Goal / Task
 
 ```
 d1-browser-agent/
-├── agent_orchestrator.py    # Guarded decision loop, loop guards, arrival verification
-├── dom_extractor.py         # Semantic DOM extraction with ad/CTA filtering + region tags
-├── d1_engine.py             # System-1 decision engine + deterministic policy pipeline
-├── d1_browser_gui.py        # CustomTkinter desktop GUI and probability inspector
-├── browser_adapter.py       # Browser snapshot adapter and DOM element parser
-├── benchmark_gpu.py         # GPU latency and decision throughput benchmarking
-├── test_suite_v2.py         # V2 hard suite (28 decision + 6 guards + 16 query + 10 safety + 5 live)
-├── compare_600m_vs_2b.py    # V1 suite source (16 cases + 12 query + 6 safety)
-├── run_iterations.py        # V1-era iteration runner (iter_1..iter_10)
-├── run_iterations_v2.py     # V2 iteration runner (iter_11..iter_20, live CDP + crash isolation)
-├── _stub_check.py           # No-GPU sanity check of the deterministic pipeline
-├── iteration_logs/          # iter_1.txt .. iter_20.txt execution & fix logs
-├── trajectories/            # Recorded JSON action trajectories
-├── test_perfect_flow.py     # End-to-end integration test harness
-└── launch_d1_gui.bat        # Windows quick-launcher script
+├── agent_orchestrator.py                # Guarded decision loop, loop guards, arrival verification
+├── dom_extractor.py                     # Semantic DOM extraction with ad/CTA filtering + region tags
+├── d1_engine.py                         # System-1 decision engine + deterministic policy pipeline
+├── d1_browser_gui.py                    # CustomTkinter desktop GUI and probability inspector
+├── browser_adapter.py                   # Browser snapshot adapter and DOM element parser
+├── benchmark_gpu.py                     # GPU latency and decision throughput benchmarking
+├── test_suite_v2.py                     # V2 hard suite (28 decision + 6 guards + 16 query + 10 safety + 5 live)
+├── compare_600m_vs_2b.py                # V1 suite source (16 cases + 12 query + 6 safety)
+├── run_iterations.py                    # V1-era iteration runner (iter_1..iter_10)
+├── run_iterations_v2.py                 # V2 iteration runner (iter_11..iter_20, live CDP + crash isolation)
+├── _stub_check.py                       # No-GPU sanity check of the deterministic pipeline
+├── iteration_logs/                      # iter_1.txt .. iter_20.txt execution & fix logs
+├── trajectories/                        # Recorded JSON action trajectories
+├── test_perfect_flow.py                 # End-to-end integration test harness
+├── launch_d1_gui.bat                    # Windows quick-launcher script
+├── GGUF_VS_D1_COMPARISON.md              # Round 1 benchmark results (GGUF vs d1 models)
+├── flappy_clone.html                    # Instrumented Flappy Bird for control benchmark
+├── game_agent_live.py                   # Game harness with reflex/D1Brain/GGUFBrain brains
+├── ROUND2_GAME_AND_HARDNAV.md            # Round 2: Flappy Bird control + hard-nav V3 results
+├── hard_nav_compare.py                  # Hard navigation V3 test runner (4 cases)
+├── hard_nav_results_600M.json           # Results JSON for d1-omni-600M (hard-nav V3)
+├── hard_nav_results_2B.json             # Results JSON for d1-2B (hard-nav V3)
+├── hard_nav_results_gguf.json           # Results JSON for GGUF (hard-nav V3)
+└── GGUF_VS_D1_COMPARISON.md              # Reference benchmark for Round 1 to Round 2
 ```
 
 ---
@@ -73,7 +82,9 @@ d1-browser-agent/
 ### 1. Requirements
 - Python 3.10+
 - PyTorch with CUDA support
-- PySide6, Transformers
+- customtkinter (GUI)
+- playwright (for BrowserOS neo integration)
+- numpy
 
 ### 2. Installation
 ```bash

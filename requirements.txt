@@ -1,4 +1,5 @@
 torch
 transformers
-PySide6
 numpy
+customtkinter
+playwright

@@ -1,0 +1,96 @@
+{
+  "model": "d1-2B",
+  "goal": "open greencode and play its latest video",
+  "target_query": "greencode",
+  "query_extraction": {
+    "query": "greencode",
+    "method": "span_read",
+    "confidence": 0.8863297835914516,
+    "latency_ms": 3039.989948272705
+  },
+  "success": true,
+  "reason": "Video page opened: 'GreenCode: the whole story - YouTube'",
+  "steps": 7,
+  "avg_latency_ms": 346.8,
+  "final_url": "https://www.youtube.com/watch?v=2Jnvyw3-8EI",
+  "final_title": "GreenCode: the whole story - YouTube",
+  "trajectory": [
+    {
+      "step": 1,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "candidate_count": 40,
+      "chosen_ref": "e1",
+      "description": "[header] search_input: Search",
+      "action_type": "type_and_search",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 2,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 32,
+      "chosen_ref": "e17",
+      "description": "[main] button: Subscribe to GreenCode.",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    },
+    {
+      "step": 3,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 34,
+      "chosen_ref": "e20",
+      "description": "[main] button: Subscribe to Green Code.",
+      "action_type": "click",
+      "confidence": 0.6552918832042707,
+      "latency_ms": 329.9381732940674
+    },
+    {
+      "step": 4,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 33,
+      "chosen_ref": "e25",
+      "description": "[main] button: Subscribe to Green Code Codes.",
+      "action_type": "click",
+      "confidence": 0.907565168876965,
+      "latency_ms": 308.41517448425293
+    },
+    {
+      "step": 5,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 27,
+      "chosen_ref": "e7",
+      "description": "[header] button: Notifications",
+      "action_type": "click",
+      "confidence": 0.7670412640126584,
+      "latency_ms": 327.93569564819336
+    },
+    {
+      "step": 6,
+      "url": "https://www.youtube.com/results?search_query=greencode",
+      "title": "greencode - YouTube",
+      "candidate_count": 27,
+      "chosen_ref": "e15",
+      "description": "[main] channel_link: GreenCode",
+      "action_type": "click",
+      "confidence": 0.3116263600902378,
+      "latency_ms": 420.8552837371826
+    },
+    {
+      "step": 7,
+      "url": "https://www.youtube.com/@itea-greencode",
+      "title": "GreenCode - YouTube",
+      "candidate_count": 35,
+      "chosen_ref": "e19",
+      "description": "[main] video_link: GreenCode: the whole story 9 minutes, 57 seconds",
+      "action_type": "click",
+      "confidence": 1.0,
+      "latency_ms": 0.0
+    }
+  ]
+}
